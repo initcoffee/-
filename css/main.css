@@ -1,0 +1,65 @@
+body {
+  font-family: 'Voltaire', sans-serif;
+  color: white;
+}
+
+.logo, .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.slogan {
+  top: 75%;
+}
+
+.top_container-fluid {
+  position: relative;
+}
+
+.logo-img {
+  width: 15vw;
+  opacity: 80%;
+}
+
+.carousel-caption {
+  padding-bottom: 0rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 900px) {
+.carousel-control-next, .carousel-control-prev {
+  top: 80%;
+  width: 40%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1400px) {
+.carousel-control-next, .carousel-control-prev {
+  top: 85%;
+  width: 50%;
+}
+}
+
+@media (min-width: 1401px) {
+.carousel-control-next, .carousel-control-prev {
+  top: 90%;
+  width: 55%;
+}
+}
+
+
+@keyframes zoomout {
+    0% {
+        transform: scale(1.2);
+      }
+}
+
+.carousel-item img {
+	animation: zoomout 12s ;
+}
