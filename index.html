@@ -10,7 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
-
+  <script type="text/javascript">
+    window.addEventListener('resize', () => {
+      document.querySelector(':root').style
+        .setProperty('--vh', window.innerHeight / 100 + 'px');
+    })
+  </script>
 </head>
 
 <body>
