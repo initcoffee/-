@@ -4,7 +4,7 @@ body {
 }
 
 .logo, .slogan {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -48,6 +48,7 @@ h5 {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 40%;
+    position: fixed;
   }
   .logo-img {
     width: 35vw;
@@ -60,6 +61,7 @@ h5 {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 40%;
+    position: fixed;
   }
   .logo-img {
     width: 20vw;
@@ -71,6 +73,7 @@ h5 {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 50%;
+    position: fixed;
   }
   .logo-img {
     width: 20vw;
@@ -82,6 +85,7 @@ h5 {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 60%;
+    position: fixed;
   }
   .logo-img {
     width: 20vw;
@@ -93,6 +97,7 @@ h5 {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 80%;
+    position: fixed;
   }
   .logo-img {
     width: 15vw;
