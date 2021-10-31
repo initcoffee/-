@@ -9,6 +9,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 60vw;
 }
 
 .slogan {
@@ -17,6 +20,11 @@ body {
 
 .top_container-fluid {
   position: relative;
+}
+
+.top_carousel{
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-caption {
@@ -40,9 +48,10 @@ h5 {
 /* ARROW */
 .arrow {
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 200%);
+  transform: translate(-50%, 250%);
+  z-index: 5;
 }
 
 .arrow span {
@@ -83,13 +92,20 @@ h5 {
 /* END OF ARROW */
 @media (max-width: 768px) {
   .carousel-control-next, .carousel-control-prev {
-    top: 92%;
-    width: 40%;
+    top: 80%;
+    width: 15%;
   }
 
   .logo-img {
     width: 35vw;
     opacity: 80%;
+  }
+  .arrow{
+    top:68%;
+  }
+  .arrow span{
+    width: 10px;
+    height: 10px;
   }
 }
 
