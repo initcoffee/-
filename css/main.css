@@ -157,3 +157,13 @@ h5 {
   width: 100vw;
   height: 40vh;
 }
+
+.about-us{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us h3{
+  position: absolute;
+  margin: auto;
+}
