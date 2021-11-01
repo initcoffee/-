@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Voltaire', sans-serif;
   color: white;

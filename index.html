@@ -13,10 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
   <script type="text/javascript">
+    // calculate vh
     window.addEventListener('resize', () => {
       document.querySelector(':root').style
         .setProperty('--vh', window.innerHeight / 100 + 'px');
-    })
+    });
+    // end of calculate vh
   </script>
 </head>
 
@@ -48,16 +50,16 @@
         </div>
         <div class="logo">
 
-            <a href="https://initcoffee.github.io/website/">
-              <img class="logo-img" src="image\logo.png" alt="">
-            </a>
+          <a href="https://initcoffee.github.io/website/">
+            <img class="logo-img" src="image\logo.png" alt="">
+          </a>
 
         </div>
       </div>
-      <div class="slogan">
+      <div class="slogan" id='slogan'>
         <h3>INITIATE YOUR WAY OF LIFE</h3>
       </div>
-      <div class="arrow">
+      <div class="arrow" id='arrow'>
         <span></span>
         <span></span>
         <span></span>
@@ -74,7 +76,7 @@
       </button>
     </div>
   </div>
-  <div class="main-body-container">
+  <div class="main-body-container" id='main-body-container'>
     <div class="row">
       <div class="about-us col-12">
         <img src="image\20201229-DSC07191.JPG" alt="">
