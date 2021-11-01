@@ -51,11 +51,11 @@ body {
 }
 
 .top_container-fluid{
-  animation: logo-animation 6s;
+  animation: logo-animation 4s;
 }
 
 .logo-img{
-  animation: logo-animation 4s;
+  animation: logo-animation 6s;
 }
 
 
