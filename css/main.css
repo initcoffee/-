@@ -34,7 +34,7 @@ body {
     opacity: 0;
   }
   100%{
-    opacity: 100;
+    opacity: 100%;
   }
 }
 
@@ -46,16 +46,17 @@ body {
     opacity: 0;
   }
   100%{
-    opacity: 100;
+    opacity: 80%;
   }
 }
 
 .top_container-fluid{
-  animation: logo-animation 4s;
+  animation: slogan-animation 4s;
 }
 
 .logo-img{
   animation: logo-animation 6s;
+  opacity: 80%;
 }
 
 
@@ -180,7 +181,6 @@ h5 {
 
   .logo-img {
     width: 35vw;
-    opacity: 80%;
   }
   .arrow{
     top:68%;
@@ -199,7 +199,6 @@ h5 {
 
   .logo-img {
     width: 20vw;
-    opacity: 80%;
   }
 }
 
@@ -211,7 +210,6 @@ h5 {
 
   .logo-img {
     width: 20vw;
-    opacity: 80%;
   }
 }
 
@@ -223,7 +221,6 @@ h5 {
 
   .logo-img {
     width: 20vw;
-    opacity: 80%;
   }
 }
 
@@ -235,7 +232,6 @@ h5 {
 
   .logo-img {
     width: 15vw;
-    opacity: 80%;
   }
 }
 
