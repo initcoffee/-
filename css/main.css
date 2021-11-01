@@ -196,7 +196,9 @@ h5 {
     top: 92%;
     width: 40%;
   }
-
+  .arrow{
+    top:70%;
+  }
   .logo-img {
     width: 20vw;
   }
@@ -207,7 +209,9 @@ h5 {
     top: 92%;
     width: 50%;
   }
-
+  .arrow{
+    top:70%;
+  }
   .logo-img {
     width: 20vw;
   }
@@ -218,7 +222,9 @@ h5 {
     top: 92%;
     width: 60%;
   }
-
+  .arrow{
+    top:70%;
+  }
   .logo-img {
     width: 20vw;
   }
@@ -229,7 +235,9 @@ h5 {
     top: 92%;
     width: 80%;
   }
-
+  .arrow{
+    top:70%;
+  }
   .logo-img {
     width: 15vw;
   }
