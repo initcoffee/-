@@ -43,19 +43,19 @@ body {
   margin-right:0.25em;
 }
 .slogan .slogan-1{
-  animation: slogan-animation 7s;
+  animation: slogan-animation 6s;
 
 }
 .slogan .slogan-2{
-  animation: slogan-animation 9s;
+  animation: slogan-animation 8s;
 
 }
 .slogan .slogan-3{
-  animation: slogan-animation 5s;
+  animation: slogan-animation 4s;
 
 }
 .slogan .slogan-4{
-  animation: slogan-animation 6s;
+  animation: slogan-animation 5s;
 }
 
 /* END OF SLOGAN ANIMATION */
