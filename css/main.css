@@ -25,18 +25,36 @@ body {
 
 }
 
-/* SLOGAN ANIMATION */
+/* SLOGAN and LOGO ANIMATION */
 @keyframes slogan-animation {
   0% {
     opacity: 0;
   }
-  60% {
+  30% {
     opacity: 0;
   }
   100%{
     opacity: 100;
   }
 }
+
+@keyframes logo-animation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+
+
+.logo-img{
+  animation: logo-animation 4s;
+}
+
 
 .slogan .space{
   display: inline-block;
@@ -71,7 +89,22 @@ body {
 
 .carousel-caption {
   padding-bottom: 0rem;
+  /* animation: carousel-caption-animation 5s; */
 }
+
+/* carousel-caption animation */
+/* @keyframes carousel-caption-animation { */
+  /* 0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+} */
+/* end of carousel-caption animation */
 
 h5 {
   font-size: 0.7rem;
