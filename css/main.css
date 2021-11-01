@@ -21,7 +21,44 @@ body {
 
 .slogan {
   top: 75%;
+  font-size: calc(1.3rem + .6vw);
+
 }
+
+/* SLOGAN ANIMATION */
+@keyframes slogan-animation {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+
+.slogan .space{
+  display: inline-block;
+  margin-right:0.25em;
+}
+.slogan .slogan-1{
+  animation: slogan-animation 7s;
+
+}
+.slogan .slogan-2{
+  animation: slogan-animation 9s;
+
+}
+.slogan .slogan-3{
+  animation: slogan-animation 5s;
+
+}
+.slogan .slogan-4{
+  animation: slogan-animation 6s;
+}
+
+/* END OF SLOGAN ANIMATION */
 
 .top_container-fluid {
   position: relative;
@@ -67,7 +104,7 @@ h5 {
   border-right: 5px solid white;
   transform: rotate(45deg);
   margin: -10px;
-  animation: animate 2s infinite;
+  animation: arrow-animation 2s infinite;
 }
 
 .arrow span:nth-child(2) {
@@ -78,7 +115,7 @@ h5 {
   animation-delay: -0.4s;
 }
 
-@keyframes animate {
+@keyframes arrow-animation {
   0% {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
@@ -95,6 +132,10 @@ h5 {
 }
 
 /* END OF ARROW */
+
+
+
+
 @media (max-width: 768px) {
   .carousel-control-next, .carousel-control-prev {
     top: 80%;
