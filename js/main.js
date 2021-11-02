@@ -11,3 +11,13 @@
   }
   window.addEventListener('resize', appHeight)
   appHeight()
+
+
+
+document.getElementById('main-body-container').scrollIntoView()
+
+
+
+function gotoMain() {
+  document.getElementById('main-body-container').scrollIntoView();
+}
