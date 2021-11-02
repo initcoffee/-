@@ -266,7 +266,7 @@ h5 {
 .about-us img, .coffee img, .blossom img, .leaf img {
   object-fit: cover;
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -291,7 +291,7 @@ h5 {
 }
 
 .bot-container {
-  height: 30vh;
+  height: 13vh;
   background-color: black;
   display: flex;
   justify-content: center;
