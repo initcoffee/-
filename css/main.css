@@ -30,7 +30,7 @@ body {
   0% {
     opacity: 0;
   }
-  30% {
+  50% {
     opacity: 0;
   }
   100%{
@@ -42,20 +42,18 @@ body {
   0% {
     opacity: 0;
   }
-  40% {
-    opacity: 0;
-  }
+
   100%{
     opacity: 100%;
   }
 }
 
 .top_container-fluid{
-  animation: slogan-animation 4s;
+  animation: slogan-animation 5s;
 }
 
 .logo-img{
-  animation: logo-animation 6s;
+  animation: logo-animation 4s;
   opacity: 100%;
 }
 
@@ -65,19 +63,19 @@ body {
   margin-right:0.25em;
 }
 .slogan .slogan-1{
-  animation: slogan-animation 6s;
+  animation: slogan-animation 7s;
 
 }
 .slogan .slogan-2{
-  animation: slogan-animation 8s;
+  animation: slogan-animation 9s;
 
 }
 .slogan .slogan-3{
-  animation: slogan-animation 4s;
+  animation: slogan-animation 5s;
 
 }
 .slogan .slogan-4{
-  animation: slogan-animation 5s;
+  animation: slogan-animation 6s;
 }
 
 /* END OF SLOGAN ANIMATION */
