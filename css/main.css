@@ -337,11 +337,11 @@ h5 {
   }
 
   .about-us h3, .coffee h3, .blossom h3, .leaf h3 {
-    padding-bottom: 3%;
+    padding-bottom: 5%;
   }
 
   .about-us h5, .coffee h5, .blossom h5, .leaf h5 {
-    padding-top: 3%;
+    padding-top: 5%;
   }
 
   .thumbnail {
@@ -349,7 +349,7 @@ h5 {
     height: 2.5rem;
   }
   .main-body-extra-caption{
-    padding-top: 2%!important;
+    padding-top: 8%!important;
   }
 }
 
