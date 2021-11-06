@@ -9,8 +9,12 @@ html{
 
 
 body {
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Bodoni Moda', serif;
   color: white;
+}
+
+h3{
+  font-size: calc(0.9rem + .6vw);
 }
 
 .logo, .slogan {
@@ -26,7 +30,7 @@ body {
 
 .slogan {
   top: 75%;
-  font-size: calc(1.3rem + .6vw);
+  font-size: calc(0.8rem + .6vw);
 
 }
 
@@ -76,10 +80,10 @@ body {
   opacity: 100%;
 }
 
-.slogan span{
+/* .slogan span{
   font-family: 'Bodoni Moda', serif;
   font-size:  calc(0.8rem + .6vw);
-}
+} */
 
 .slogan .space{
   display: inline-block;
@@ -287,7 +291,7 @@ h5 {
 .about-us img, .coffee img, .blossom img, .leaf img {
   object-fit: cover;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -323,7 +327,7 @@ h5 {
 
 .bot-container span {
   display: flex;
-
+  font-size: calc(0.5rem + .6vw);
 }
 
 .about-us{
