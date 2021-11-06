@@ -4,6 +4,10 @@
 //     .setProperty('--vh', window.innerHeight / 100 + 'px');
 // });
 // // end of calculate vh
+
+
+
+
 const appHeight = () => {
   const doc = document.documentElement
   doc.style.setProperty('--app-height', `${window.innerHeight}px`)
@@ -17,11 +21,19 @@ appHeight()
 function gotoMain() {
   document.getElementById('main-body-container').scrollIntoView();
 }
+//
+// window.addEventListener('scroll', () => {
+//   const scrolled = window.scrollY / 2;
+//   let root = document.documentElement;
+//   root.style.setProperty('--top-container-translate', scrolled + 'px');
+//
+// })
 
-window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY/2;
+
+$(window).scroll(function() {
+  var scrolled = $(window).scrollTop()/2;
+
   let root = document.documentElement;
-    root.style.setProperty('--top-container-translate', scrolled + 'px');
+  root.style.setProperty('--top-container-translate', scrolled + 'px');
 
-  console.log(scrolled);
 })
