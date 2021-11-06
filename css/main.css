@@ -381,7 +381,7 @@ h5 {
 .main-body-bg {
   object-fit: cover;
   width: 100vw;
-  height: 48vh;
+  height: 40vh;
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
