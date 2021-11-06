@@ -1,3 +1,4 @@
+
 :root{
   --top-container-translate:0px;
 }
@@ -75,6 +76,9 @@ body {
   opacity: 100%;
 }
 
+.slogan span{
+  font-family: 'Bodoni Moda', serif;
+}
 
 .slogan .space{
   display: inline-block;
