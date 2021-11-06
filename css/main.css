@@ -78,7 +78,7 @@ body {
 
 .slogan span{
   font-family: 'Bodoni Moda', serif;
-  font-size:  calc(1.3rem + .6vw);
+  font-size:  calc(1rem + .6vw);
 }
 
 .slogan .space{
