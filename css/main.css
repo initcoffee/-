@@ -1,19 +1,17 @@
-
-:root{
-  --top-container-translate:0px;
+:root {
+  --top-container-translate: 0px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
 }
 
-h3{
+h3 {
   font-size: calc(0.9rem + .6vw);
 }
 
@@ -31,7 +29,6 @@ h3{
 .slogan {
   top: 75%;
   font-size: calc(0.8rem + .6vw);
-
 }
 
 /* SLOGAN and LOGO ANIMATION */
@@ -39,10 +36,12 @@ h3{
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 100%;
   }
 }
@@ -52,7 +51,7 @@ h3{
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 100%;
   }
 }
@@ -61,21 +60,22 @@ h3{
   0% {
     opacity: 0;
   }
+
   30% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 100%;
   }
 }
 
-
-.top_container-fluid{
+.top_container-fluid {
   animation: top_container-animation 5s;
   z-index: -1;
 }
 
-.logo-img{
+.logo-img {
   animation: logo-animation 4s;
   opacity: 100%;
 }
@@ -84,34 +84,33 @@ h3{
   font-family: 'Bodoni Moda', serif;
   font-size:  calc(0.8rem + .6vw);
 } */
-
-.slogan .space{
+.slogan .space {
   display: inline-block;
-  margin-right:0.25em;
+  margin-right: 0.25em;
 }
-.slogan .slogan-1{
+
+.slogan .slogan-1 {
   animation: slogan-animation 7s;
-
 }
-.slogan .slogan-2{
+
+.slogan .slogan-2 {
   animation: slogan-animation 9s;
-
 }
-.slogan .slogan-3{
+
+.slogan .slogan-3 {
   animation: slogan-animation 5s;
-
 }
-.slogan .slogan-4{
+
+.slogan .slogan-4 {
   animation: slogan-animation 6s;
 }
 
 /* END OF SLOGAN ANIMATION */
-
 .top_container-fluid {
   position: relative;
 }
 
-.top_carousel{
+.top_carousel {
   display: flex;
   justify-content: center;
 }
@@ -123,7 +122,7 @@ h3{
 
 /* carousel-caption animation */
 /* @keyframes carousel-caption-animation { */
-  /* 0% {
+/* 0% {
     opacity: 0;
   }
   60% {
@@ -134,7 +133,6 @@ h3{
   }
 } */
 /* end of carousel-caption animation */
-
 h5 {
   font-size: 0.7rem;
 }
@@ -194,10 +192,6 @@ h5 {
 }
 
 /* END OF ARROW */
-
-
-
-
 @media (max-width: 768px) {
   .carousel-control-next, .carousel-control-prev {
     top: 80%;
@@ -207,10 +201,12 @@ h5 {
   .logo-img {
     width: 35vw;
   }
-  .arrow{
-    top:68%;
+
+  .arrow {
+    top: 68%;
   }
-  .arrow span{
+
+  .arrow span {
     width: 10px;
     height: 10px;
   }
@@ -221,9 +217,11 @@ h5 {
     top: 92%;
     width: 40%;
   }
-  .arrow{
-    top:70%;
+
+  .arrow {
+    top: 70%;
   }
+
   .logo-img {
     width: 20vw;
   }
@@ -234,9 +232,11 @@ h5 {
     top: 92%;
     width: 50%;
   }
-  .arrow{
-    top:70%;
+
+  .arrow {
+    top: 70%;
   }
+
   .logo-img {
     width: 20vw;
   }
@@ -247,9 +247,11 @@ h5 {
     top: 92%;
     width: 60%;
   }
-  .arrow{
-    top:70%;
+
+  .arrow {
+    top: 70%;
   }
+
   .logo-img {
     width: 20vw;
   }
@@ -260,9 +262,11 @@ h5 {
     top: 92%;
     width: 80%;
   }
-  .arrow{
-    top:70%;
+
+  .arrow {
+    top: 70%;
   }
+
   .logo-img {
     width: 15vw;
   }
@@ -283,8 +287,8 @@ h5 {
   width: 100vw;
 }
 
-.main-body-container .row{
-  width:100vw;
+.main-body-container .row {
+  width: 100vw;
   margin-left: 0;
 }
 
@@ -306,36 +310,33 @@ h5 {
 .about-us, .coffee, .blossom, .leaf {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-right: 0;
   padding-left: 0;
+  justify-content: center;
 }
 
-.about-us h3, .coffee h3, .blossom h3, .leaf h3 {
+.about-us h3, .coffee h3, .blossom h3, .leaf h3, .about-us h5, .coffee h5, .blossom h5, .leaf h5 {
   position: absolute;
-  margin: auto;
 }
+
+.about-us h3, .coffee h3, .blossom h3, .leaf h3{
+  padding-top: 3%;
+}
+.about-us h5, .coffee h5, .blossom h5, .leaf h5{
+  padding-top: 13%;
+}
+
 
 .bot-container {
-  height: 13vh;
+  height: 21vh;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  flex-direction: column;
 }
 
-.bot-container span {
-  display: flex;
+.bot-container h3 {
   font-size: calc(0.5rem + .6vw);
-}
 
-.about-us{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-us h3{
-  position: absolute;
-  margin: auto;
 }
