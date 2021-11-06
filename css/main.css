@@ -15,6 +15,10 @@ h3 {
   font-size: calc(0.9rem + .6vw);
 }
 
+h5 {
+  font-size: calc(0.7rem + .3vw);
+}
+
 .logo, .slogan {
   position: absolute;
   top: 50%;
@@ -133,9 +137,6 @@ h3 {
   }
 } */
 /* end of carousel-caption animation */
-h5 {
-  font-size: 0.7rem;
-}
 
 .top_container-fluid, .top_carousel, .carousel-inner, .carousel-item, .w-100 {
   height: 100vh;
@@ -218,8 +219,9 @@ h5 {
   .about-us h5, .coffee h5, .blossom h5, .leaf h5 {
     padding-top: 15%;
   }
-  .main-body-extra-caption{
-    padding-top: 25%!important;
+
+  .main-body-extra-caption {
+    padding-top: 25% !important;
   }
 
   .thumbnail {
@@ -255,10 +257,9 @@ h5 {
     height: 2rem;
   }
 
-  .main-body-extra-caption{
-    padding-top: 20%!important;
+  .main-body-extra-caption {
+    padding-top: 20% !important;
   }
-
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -274,10 +275,12 @@ h5 {
   .logo-img {
     width: 20vw;
   }
+
   .thumbnail {
     width: 2rem;
     height: 2rem;
   }
+
   .about-us h3, .coffee h3, .blossom h3, .leaf h3 {
     padding-bottom: 10%;
   }
@@ -285,8 +288,9 @@ h5 {
   .about-us h5, .coffee h5, .blossom h5, .leaf h5 {
     padding-top: 10%;
   }
-  .main-body-extra-caption{
-    padding-top: 15%!important;
+
+  .main-body-extra-caption {
+    padding-top: 15% !important;
   }
 }
 
@@ -316,10 +320,10 @@ h5 {
     width: 2rem;
     height: 2rem;
   }
-  .main-body-extra-caption{
-    padding-top: 8%!important;
-  }
 
+  .main-body-extra-caption {
+    padding-top: 8% !important;
+  }
 }
 
 @media (min-width: 2100px) {
@@ -348,8 +352,9 @@ h5 {
     width: 2.5rem;
     height: 2.5rem;
   }
-  .main-body-extra-caption{
-    padding-top: 8%!important;
+
+  .main-body-extra-caption {
+    padding-top: 8% !important;
   }
 }
 
@@ -399,9 +404,6 @@ h5 {
 .about-us h3, .coffee h3, .blossom h3, .leaf h3, .about-us h5, .coffee h5, .blossom h5, .leaf h5, .thumbnail {
   position: absolute;
 }
-
-
-
 
 .bot-container {
   height: 21vh;
