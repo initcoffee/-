@@ -389,7 +389,7 @@ h5 {
   filter: grayscale(0%);
 }
 
-.about-us img:hover, .coffee img:hover, .blossom img:hover, .leaf img:hover .init-select img:hover{
+.about-us img:hover, .coffee img:hover, .blossom img:hover, .leaf img:hover, .init-select img:hover{
   filter: grayscale(50%);
 }
 
