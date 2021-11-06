@@ -11,7 +11,7 @@ function gotoMain() {
 }
 
 
-$( document ).ready(function() {
+$(document).ready(function() {
   const appHeight = () => {
     const doc = document.documentElement
     doc.style.setProperty('--app-height', `${window.innerHeight}px`)
@@ -30,7 +30,7 @@ $( document ).ready(function() {
 
 
   $(window).scroll(function() {
-    var scrolled = $(window).scrollTop()/2;
+    var scrolled = $(window).scrollTop() / 2;
     // document.getElementById('top_container-fluid').style.transform ='0px,'
 
 
