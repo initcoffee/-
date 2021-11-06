@@ -287,10 +287,11 @@ h5 {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   overflow: hidden;
+  filter: grayscale(50%);
 }
 
 .about-us img:hover, .coffee img:hover, .blossom img:hover, .leaf img:hover {
-  opacity: .7;
+  filter: grayscale(0%);
 }
 
 .about-us, .coffee, .blossom, .leaf {
