@@ -31,7 +31,8 @@ function gotoMain() {
 
 
 $(window).scroll(function() {
-  var scrolled = $(window).scrollTop()/6;
+  var scrolled = $(window).scrollTop()/4.5;
+  // document.getElementById('top_container-fluid').style.transform ='0px,'
 
 
   let root = document.documentElement;
