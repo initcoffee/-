@@ -30,7 +30,7 @@ $( document ).ready(function() {
 
 
   $(window).scroll(function() {
-    var scrolled = $(window).scrollTop()/4.5;
+    var scrolled = $(window).scrollTop()/2;
     // document.getElementById('top_container-fluid').style.transform ='0px,'
 
 
