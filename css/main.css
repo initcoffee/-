@@ -338,5 +338,6 @@ h5 {
 
 .bot-container h3 {
   font-size: calc(0.5rem + .6vw);
+  padding-bottom: 2%;
 
 }
