@@ -33,6 +33,7 @@ function gotoMain() {
 $(window).scroll(function() {
   var scrolled = $(window).scrollTop()/6;
 
+
   let root = document.documentElement;
   root.style.setProperty('--top-container-translate', scrolled + 'px');
 
