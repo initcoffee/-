@@ -7,7 +7,7 @@
 
 
 function gotoMain() {
-  document.getElementById('main-body-container').scrollIntoView();
+  document.getElementById('main-body-container').scrollIntoView({ behavior: 'smooth' });
 }
 
 
