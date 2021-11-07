@@ -76,7 +76,7 @@ h5 {
 
 .top_container-fluid {
   animation: top_container-animation 5s;
-  z-index: -1;
+  z-index: -2;
 }
 
 .logo-img {
@@ -371,12 +371,22 @@ h5 {
 
 .main-body-container {
   width: 100vw;
+  overflow: hidden;
 }
 
 .main-body-container .row {
   width: 100vw;
   margin-left: 0;
 }
+
+.blossom, .coffee, .leaf{
+  z-index: 0;
+}
+
+.about-us, .init-select{
+  z-index: 1;
+}
+
 
 .main-body-bg {
   object-fit: cover;
@@ -389,8 +399,9 @@ h5 {
   filter: grayscale(0%);
 }
 
-.about-us img:hover, .coffee img:hover, .blossom img:hover, .leaf img:hover, .init-select img:hover{
+.main-body-bg:hover{
   filter: grayscale(50%);
+  transform: scale(1.1);
 }
 
 .about-us, .coffee, .blossom, .leaf, .init-select {
