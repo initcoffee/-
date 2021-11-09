@@ -8,8 +8,11 @@
 
 function gotoMain() {
   document.getElementById('main-body-container').scrollIntoView({ behavior: 'smooth' });
-}
+};
 
+function cancel() {
+  document.getElementById("shopify-section-announcement-bar").style.display = "none";
+};
 
 $(document).ready(function() {
   const appHeight = () => {
