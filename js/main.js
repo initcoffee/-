@@ -34,14 +34,14 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scrolled = $(window).scrollTop()/1.3;
-    var scrolled2 = $(window).scrollTop();
-    var elementOffset = $("#brand-description-container").offset().top;
-    var distance = (elementOffset - scrolled2)/1.3;
+    // var scrolled2 = $(window).scrollTop();
+    // var elementOffset = $("#brand-description-container").offset().top;
+    // var distance = (elementOffset - scrolled2)/1.3;
 
 
     let root = document.documentElement;
     root.style.setProperty('--top-container-translate', scrolled + 'px');
-    root.style.setProperty('--brand-description-container-translate', distance + 'px');
+    // root.style.setProperty('--brand-description-container-translate', distance + 'px');
 
   });
 
