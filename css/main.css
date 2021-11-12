@@ -459,3 +459,8 @@ h5 {
 .fa-instagram {
   color: white;
 }
+
+footer{
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+}
