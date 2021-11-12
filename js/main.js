@@ -36,7 +36,7 @@ $(document).ready(function() {
     var scrolled = $(window).scrollTop()/1.3;
     var scrolled2 = $(window).scrollTop();
     var elementOffset = $("#brand-description-container").offset().top;
-    var distance = (elementOffset - scrolled2)/5;
+    var distance = (elementOffset - scrolled2)/1.3;
 
 
     let root = document.documentElement;

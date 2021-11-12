@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 body {
@@ -221,6 +220,10 @@ h5 {
 
 /* END OF ARROW */
 @media (max-width: 768px) {
+    html{
+        scroll-snap-type: y proximity;
+    }
+
   .carousel-control-next, .carousel-control-prev {
     top: 80%;
     width: 15%;
