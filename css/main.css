@@ -10,6 +10,7 @@ html {
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
+  overscroll-behavior: contain;
 }
 
 h3 {
