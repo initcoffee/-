@@ -103,6 +103,7 @@ h5 {
 .top_container-fluid {
   animation: top_container-animation 5s;
   z-index: -2;
+  scroll-snap-align: start;
 }
 
 .logo-img {
