@@ -409,7 +409,7 @@ h5 {
   height: 100vh;
   overflow: hidden;
   scroll-snap-align: start;
-  /* scroll-snap-stop: always; */
+  scroll-snap-stop: always;
   background-color: #b3c1c8;
 }
 
