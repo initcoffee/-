@@ -12,8 +12,8 @@ body {
   font-family: 'Bodoni Moda', serif;
   color: white;
   overscroll-behavior: none;
-
 }
+
 
 h3 {
   font-size: calc(0.9rem + .6vw);
@@ -408,7 +408,7 @@ h5 {
 
 .brand-description-container {
   width: 100vw;
-  height: 100vh;
+
   height: calc(var(--appHeight, 1vh) * 100);
   min-height: -webkit-fill-available;
   overflow: hidden;
