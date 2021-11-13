@@ -6,12 +6,17 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
+  overflow: hidden;
 }
 
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
   overscroll-behavior: none;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+
 }
 
 h3 {
@@ -226,7 +231,7 @@ h5 {
 
 /* END OF ARROW */
 @media (max-width: 768px) {
-  html {
+  body {
     scroll-snap-type: y mandatory;
   }
 
