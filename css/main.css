@@ -171,7 +171,7 @@ h5 {
 } */
 .top_container-fluid, .top_carousel, .carousel-inner, .carousel-item, .w-100 {
   height: 100vh;
-  /* height: calc(var(--appHeight, 1vh) * 100); */
+  height: calc(var(--appHeight, 1vh) * 100);
   width: 100vw;
 }
 
@@ -407,6 +407,7 @@ h5 {
 .brand-description-container {
   width: 100vw;
   height: 100vh;
+  height: calc(var(--appHeight, 1vh) * 100);
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
