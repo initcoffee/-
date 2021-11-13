@@ -21,6 +21,8 @@
   <script src="https://kit.fontawesome.com/7ac380394c.js" crossorigin="anonymous"></script>
   <!-- safari scroll (Polyfill) -->
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="js\rellax.min.js"></script>
+
 </head>
 
 <body>
@@ -87,8 +89,8 @@
     <span></span>
   </div>
   <div class="top_container-fluid" id='top_container-fluid' style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com';">
-    <div id="top_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner" style="transform:translate(0px,var(--top-container-translate))">
+    <div id="top_carousel" class="carousel slide carousel-fade rellax" data-rellax-speed="-5"  data-bs-ride="carousel">
+      <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
           <img
           srcset='image\20190805-DSC05209M.jpg 480w, image\20190805-DSC05209.jpg 800w'
@@ -127,15 +129,18 @@
     </div>
   </div>
 
-  <div class="brand-description-container" id='brand-description-container'>
-    <div class="brand-description" style="transform:translate(0px,var(--brand-description-container-translate))">
-      <h3>Savouring every part of the coffee tree</h3>
-      <h5>
-        Init.coffee embraces the full cycle of a coffee tree. From coffee blossom, leaf, to the ripening fruits of the coffee cherry, we bring to you an extraordinary experience of aromatic indulgence.
-      </h5>
+
+    <div class="brand-description-container" id='brand-description-container'>
+
+        <div class="brand-description rellax" id='brand-description' data-rellax-percentage="0.5">
+          <h3>Savouring every part of the coffee tree</h3>
+          <h5>
+            Init.coffee embraces the full cycle of a coffee tree. From coffee blossom, leaf, to the ripening fruits of the coffee cherry, we bring to you an extraordinary experience of aromatic indulgence.
+          </h5>
+        </div>
+      <img id='coffeeplant' src="image\coffeeplant.png" alt="" class="rellax" data-rellax-percentage="0.5">
     </div>
-    <img id='coffeeplant' src="image\coffeeplant.png" alt="" style="transform:translate(0px,var(--brand-description-container-translate))">
-  </div>
+
 
   <div class="main-body-container" id='main-body-container'>
     <div class="row">
