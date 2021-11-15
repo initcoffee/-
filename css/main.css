@@ -6,14 +6,21 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
-  height:100%;
+  /* test */
+  /* overflow: hidden; */
+  /* test */
 }
 
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
   overscroll-behavior: none;
-  height:100%;
+  /* test */
+  /* position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; */
+  /* test */
 }
 
 h3 {
@@ -172,7 +179,7 @@ h5 {
   position: fixed;
 } */
 .top_container-fluid, .top_carousel, .carousel-inner, .carousel-item, .w-100 {
-  height: 100%;
+  height: 100vh;
   /* height: calc(var(--appHeight, 1vh) * 100); */
   min-height: -webkit-fill-available;
   width: 100vw;
@@ -411,7 +418,8 @@ h5 {
 
 .brand-description-container {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   background-color: #b3c1c8;
