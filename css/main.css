@@ -150,6 +150,7 @@ h5 {
 /* END OF SLOGAN ANIMATION */
 .top_container-fluid {
   position: relative;
+  height: -webkit-fill-available;
 }
 
 .top_carousel {
@@ -184,6 +185,8 @@ h5 {
   min-height: -webkit-fill-available;
   width: 100vw;
 }
+
+
 
 .w-100 {
   object-fit: cover;
@@ -416,9 +419,8 @@ h5 {
 
 .brand-description-container {
   width: 100vw;
-  /* height: 100vh; */
-  /* height: calc(var(--appHeight, 1vh) * 100); */
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: -webkit-fill-available;
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
