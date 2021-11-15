@@ -430,25 +430,30 @@ h5 {
 }
 
 .brand-description {
-  width: 64vw;
-  margin-left: 32vw;
-  padding: 4rem 1rem 2rem;
+  max-width: calc(7rem + 50vw);
+  margin: auto;
+  padding: calc(0rem + 11vh) 0;
 }
 
 .brand-description h3 {
   padding-bottom: 3rem;
+  font-size: calc(0.9rem + 3vw);
 }
 
 .brand-description h5 {
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
+
+  font-size: calc(0.8rem + 1vw);
 }
+
 
 #coffeeplant {
   border-radius: 50%;
-  width: calc(24rem + 5vw);
+  width: calc(20rem + 36vw);
   background-color: white;
   padding: 2rem;
   margin: 2rem;
+  position: absolute;
 }
 
 .main-body-container {
