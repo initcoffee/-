@@ -241,7 +241,7 @@ h5 {
 /* END OF ARROW */
 @media (max-width: 768px) {
   html {
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
   }
 
   .carousel-control-next, .carousel-control-prev {
