@@ -7,7 +7,9 @@
 
 
 function gotoMain() {
-  document.getElementById('brand-description-container').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('brand-description-container').scrollIntoView({
+    behavior: 'smooth'
+  });
 };
 
 function cancel() {
@@ -15,10 +17,17 @@ function cancel() {
 };
 
 $(document).ready(function() {
-  const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-  }
+
+  $(window).resize(function() {
+    $(content).css('height', $(window).height() - $(nav).height());
+  });
+
+
+
+  // const appHeight = () => {
+  //   const doc = document.documentElement
+  //   doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+  // }
   // window.addEventListener('resize', appHeight)
   // appHeight()
 
@@ -28,7 +37,7 @@ $(document).ready(function() {
   //   const scrolled = window.scrollY / 2;
   //   let root = document.documentElement;
   //   root.style.setProperty('--top-container-translate', scrolled + 'px');
-  //
+  //   console.log(scrolled)
   // })
 
   var rellax = new Rellax('.rellax');
@@ -45,16 +54,16 @@ $(document).ready(function() {
   //
   // });
 
-    // $(window).scroll(function() {
-    //   var scrolled = $(window).scrollTop();
-    //   var elementOffset = $("#brand-description-container").offset().top;
-    //   var distance = (elementOffset - scrolled);
-    //   // document.getElementById('top_container-fluid').style.transform ='0px,'
-    //
-    //
-    //   let root = document.documentElement;
-    //   root.style.setProperty('--brand-description-container-translate', distance + 'px');
-    //
-    // });
+  // $(window).scroll(function() {
+  //   var scrolled = $(window).scrollTop();
+  //   var elementOffset = $("#brand-description-container").offset().top;
+  //   var distance = (elementOffset - scrolled);
+  //   // document.getElementById('top_container-fluid').style.transform ='0px,'
+  //
+  //
+  //   let root = document.documentElement;
+  //   root.style.setProperty('--brand-description-container-translate', distance + 'px');
+  //
+  // });
 
 });
