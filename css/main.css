@@ -426,8 +426,9 @@ h5 {
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-
-  background-image: url("C:/Users/user/github/website/image/brand-description-1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../image/brand-description-1.JPG");
 }
 
 .brand-description {
@@ -435,6 +436,7 @@ h5 {
   margin: auto;
   padding: calc(0rem + 11vh) calc(1rem + 3vw);
   background-color: #F3D5C0;
+
 }
 
 .brand-description h3 {
