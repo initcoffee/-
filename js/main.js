@@ -20,7 +20,9 @@ function cancel() {
 $(document).ready(function() {
 
 
-
+  $("html, body, .wrapper").css({
+    height: $(window).height()
+});
 
   // const appHeight = () => {
   //   const doc = document.documentElement
