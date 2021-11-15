@@ -22,9 +22,12 @@ body {
   -webkit-overflow-scrolling: touch;
   height: 100%; */
   /* test */
-
 }
 
+.wrapper{
+  height: 100%;
+  overflow-y: scroll;
+}
 
 
 h3 {
