@@ -426,13 +426,15 @@ h5 {
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  background-color: #b3c1c8;
+
+  background-image: url("C:/Users/user/github/website/image/brand-description-1.JPG");
 }
 
 .brand-description {
   max-width: calc(7rem + 50vw);
   margin: auto;
-  padding: calc(0rem + 11vh) 0;
+  padding: calc(0rem + 11vh) calc(1rem + 3vw);
+  background-color: #F3D5C0;
 }
 
 .brand-description h3 {
@@ -442,12 +444,20 @@ h5 {
 
 .brand-description h5 {
   padding-bottom: 2rem;
-
   font-size: calc(0.8rem + 1vw);
 }
 
+.brand-description-bg{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+}
 
-#coffeeplant {
+#brand-description-img-1 {
   border-radius: 50%;
   width: calc(20rem + 36vw);
   background-color: white;
@@ -457,7 +467,15 @@ h5 {
   transition: all .2s ease-in-out;
 }
 
-#coffeeplant:hover{
+#brand-description-img-2{
+  position: absolute;
+  transition: all .2s ease-in-out;
+  border-radius: 50%;
+  width: calc(20rem + 36vw);
+
+}
+
+#brand-description-img-1:hover, #brand-description-img-2:hover{
   transform: scale(1.1);
 }
 
