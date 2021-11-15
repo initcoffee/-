@@ -18,6 +18,12 @@ function cancel() {
 
 $(document).ready(function() {
 
+  window.addEventListener("load", function() {
+    window.scrollTo(0, 0);
+  });
+  $("html, body, #wrapper").css({
+    height: $(window).height()
+});
 
 
   // const appHeight = () => {

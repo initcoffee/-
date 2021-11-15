@@ -9,6 +9,7 @@ html {
   /* test */
   /* overflow: hidden; */
   /* test */
+
 }
 
 body {
@@ -21,7 +22,10 @@ body {
   -webkit-overflow-scrolling: touch;
   height: 100%; */
   /* test */
+
 }
+
+
 
 h3 {
   font-size: calc(0.9rem + .6vw);
@@ -501,18 +505,15 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scroll-snap-align: end;
 }
 
 .bot-container h3 {
   font-size: calc(0.5rem + .4vw);
   padding-bottom: 2%;
+
 }
 
 .fa-instagram {
   color: white;
-}
-
-footer {
-  scroll-snap-align: end;
-  /* scroll-snap-stop: always; */
 }
