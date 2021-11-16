@@ -276,7 +276,6 @@ h5 {
   }
 
   .thumbnail {
-    width: 1rem;
     height: 1rem;
   }
 }
@@ -304,7 +303,6 @@ h5 {
   }
 
   .thumbnail {
-    width: 2rem;
     height: 2rem;
   }
 
@@ -328,7 +326,6 @@ h5 {
   }
 
   .thumbnail {
-    width: 2rem;
     height: 2rem;
   }
 
@@ -368,7 +365,6 @@ h5 {
   }
 
   .thumbnail {
-    width: 2rem;
     height: 2rem;
   }
 
@@ -400,7 +396,6 @@ h5 {
   }
 
   .thumbnail {
-    width: 2.5rem;
     height: 2.5rem;
   }
 
@@ -433,10 +428,12 @@ h5 {
 }
 
 .brand-description {
-  max-width: calc(7rem + 50vw);
+  width: calc(7rem + 40vw);
+  max-width: 55rem;
   margin: auto;
   padding: calc(0rem + 11vh) calc(1rem + 3vw);
   background-color: #F3D5C0;
+
 
 }
 
@@ -528,6 +525,7 @@ h5 {
 .about-us h3, .coffee h3, .blossom h3, .leaf h3, .init-select h3, .about-us h5, .coffee h5, .blossom h5, .leaf h5, .init-select h5, .thumbnail {
   position: absolute;
 }
+
 
 .bot-container {
   height: 21vh;
