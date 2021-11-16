@@ -22,24 +22,13 @@ function cancel() {
 $(document).ready(function() {
 
 
-  // const appHeight = () => {
-  //   const doc = document.documentElement;
-  //   doc.style.setProperty('--app-height', `${window.innerHeight}px`);
-  // }
-  //
-  // appHeight()
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  }
 
-  var appHeight = (function() {
-    var executed = false;
-    return function() {
-      if (!executed) {
-        executed = true;
-        const doc = document.documentElement;
-        doc.style.setProperty('--app-height', `${window.innerHeight*0.01}px`);
-      }
-    };
-  })();
   appHeight()
+
   //
   // window.addEventListener('scroll', () => {
   //   const scrolled = window.scrollY / 2;
