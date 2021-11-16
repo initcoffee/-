@@ -439,7 +439,14 @@ h5 {
   max-width: 45rem;
   margin: auto;
   padding: calc(0rem + 11vh) calc(1rem + 3vw);
-  background-color: #F3D5C0;
+}
+
+#brand-description-1{
+    background-color: #D1E8E4;
+}
+
+#brand-description-2{
+    background-color: #F3D5C0;
 }
 
 .brand-description h3 {
