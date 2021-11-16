@@ -424,6 +424,13 @@ h5 {
   scroll-snap-stop: always;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#brand-description-container-1{
+  background-image: url("../image/Kyoto_Kamogawa.JPG");
+}
+
+#brand-description-container-2{
   background-image: url("../image/brand-description-1.JPG");
 }
 
@@ -433,8 +440,6 @@ h5 {
   margin: auto;
   padding: calc(0rem + 11vh) calc(1rem + 3vw);
   background-color: #F3D5C0;
-
-
 }
 
 .brand-description h3 {

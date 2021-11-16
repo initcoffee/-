@@ -7,7 +7,7 @@
 
 
 function gotoMain() {
-  document.getElementById('brand-description-container').scrollIntoView({
+  document.getElementById('brand-description-container-1').scrollIntoView({
     behavior: 'smooth'
   });
 };
