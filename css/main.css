@@ -494,6 +494,25 @@ h5 {
   position: absolute;
   top: 107%;
 }
+
+.branddescription-transition-1{
+  animation: logo-animation 1.5s;
+}
+
+.branddescription-transition-2{
+  animation: logo-animation 3.5s;
+}
+.branddescription-transition-3{
+  animation: logo-animation 4s;
+}
+.branddescription-transition-4{
+  animation: logo-animation 2.5s;
+}
+
+.subbranddescription-transition{
+  animation: slogan-animation 2s;
+}
+
 /*
 #brand-description-1{
     background-color: #D1E8E4;
