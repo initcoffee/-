@@ -29,10 +29,12 @@ body {
 
 h3 {
   font-size: calc(0.9rem + .6vw);
+  color: cornsilk;
 }
 
 h5 {
   font-size: calc(0.7rem + .3vw);
+    color: cornsilk;
 }
 
 .logo, .slogan {
@@ -265,12 +267,12 @@ h5 {
 
   .about-us h3, .coffee h3, .blossom h3, .leaf h3, .init-select h3 {
     padding-bottom: 15%;
-    color: cornsilk;
+
   }
 
   .about-us h5, .coffee h5, .blossom h5, .leaf h5, .init-select h5 {
     padding-top: 15%;
-    color: cornsilk;
+
   }
 
   .main-body-extra-caption {
@@ -605,6 +607,7 @@ h5 {
 
 .about-us h3, .coffee h3, .blossom h3, .leaf h3, .init-select h3, .about-us h5, .coffee h5, .blossom h5, .leaf h5, .init-select h5, .thumbnail {
   position: absolute;
+
 }
 
 
