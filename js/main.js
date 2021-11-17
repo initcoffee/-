@@ -98,6 +98,7 @@ $(document).ready(function() {
   const branddescription32 = document.querySelector('.branddescription-animation-32');
   const branddescription33 = document.querySelector('.branddescription-animation-33');
   const subbranddescription = document.querySelector('.description-text2');
+  const logo = document.querySelector('#init-sign');
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -136,6 +137,8 @@ $(document).ready(function() {
         branddescription32.classList.add('branddescription-transition-2');
         branddescription33.classList.add('branddescription-transition-1');
         subbranddescription.classList.add('subbranddescription-transition');
+        logo.classList.add('subbranddescription-transition');
+
         return;
       }
 
@@ -173,6 +176,8 @@ $(document).ready(function() {
       branddescription32.classList.remove('branddescription-transition-2');
       branddescription33.classList.remove('branddescription-transition-1');
       subbranddescription.classList.remove('subbranddescription-transition');
+      logo.classList.remove('subbranddescription-transition');
+
     });
   });
 
