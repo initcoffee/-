@@ -240,7 +240,7 @@ h5 {
 }
 
 /* END OF ARROW */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   html {
     /* scroll-snap-type: y proximity; */
   }
@@ -278,9 +278,16 @@ h5 {
   .thumbnail {
     height: 1.5rem;
   }
+
+  #init-sign{
+    left:45%;
+  }
+  .brand-description h3 {
+    padding-bottom: 2.5rem!important;
+  }
 }
 
-@media (max-width: 900px) and (min-width: 769px) {
+@media (max-width: 900px) and (min-width: 501px) {
   .carousel-control-next, .carousel-control-prev {
     top: 92%;
     width: 40%;
@@ -308,6 +315,11 @@ h5 {
 
   .main-body-extra-caption {
     padding-top: 20% !important;
+  }
+
+  #init-sign{
+  left:50%;
+  margin-top: 3rem;
   }
 }
 
@@ -340,6 +352,10 @@ h5 {
   .main-body-extra-caption {
     padding-top: 15% !important;
   }
+  #init-sign{
+    margin-top: 3rem;
+  left:50%;
+  }
 }
 
 @media (min-width: 1201px) {
@@ -371,6 +387,11 @@ h5 {
   .main-body-extra-caption {
     padding-top: 8% !important;
   }
+
+    #init-sign{
+      margin-top: 5rem;
+      left:50%;
+    }
 }
 
 @media (min-width: 2100px) {
@@ -402,6 +423,11 @@ h5 {
   .main-body-extra-caption {
     padding-top: 8% !important;
   }
+
+    #init-sign{
+      marign-top: 7rem;
+      left:50%;
+    }
 }
 
 @keyframes zoomout {
@@ -427,7 +453,7 @@ h5 {
 }
 
 #brand-description-container-1{
-  background-image: url("../image/Kyoto_Kamogawa.JPG");
+  background-image: url("../image/20211112-DSC09027.JPG");
 }
 
 #brand-description-container-2{
@@ -435,28 +461,28 @@ h5 {
 }
 
 .brand-description {
-  width: calc(7rem + 40vw);
-  max-width: 45rem;
+  width: calc(7rem + 64vw);
+  max-width: 60rem;
   margin: auto;
   padding: calc(0rem + 11vh) calc(1rem + 3vw);
 }
-
+/*
 #brand-description-1{
     background-color: #D1E8E4;
 }
 
 #brand-description-2{
     background-color: #F3D5C0;
-}
+} */
 
 .brand-description h3 {
   padding-bottom: 3rem;
-  font-size: calc(0.9rem + 2vw);
+  font-size: calc(0.9rem + 3vw);
 }
 
 .brand-description h5 {
-  padding-bottom: 2rem;
-  font-size: calc(0.8rem + 0.7vw);
+  font-size: calc(0.8rem + 0.3vw);
+  padding-left: 1.5rem;
 }
 
 .brand-description-bg{
@@ -484,8 +510,14 @@ h5 {
   transition: all .2s ease-in-out;
   border-radius: 50%;
   width: calc(20rem + 36vw);
-
 }
+
+#init-sign{
+  height: 3.5rem;
+  position: absolute;
+  height: calc(1.5rem + 7vw);
+}
+
 
 #brand-description-img-1:hover, #brand-description-img-2:hover{
   transform: scale(1.1);
@@ -547,6 +579,7 @@ h5 {
   align-items: center;
   flex-direction: column;
   scroll-snap-align: end;
+  width: 100vw;
 }
 
 .bot-container h3 {
