@@ -480,17 +480,6 @@ h5 {
 
 
 
-.brand-description-bg, .brand-description-bg-img{
-  width: 100vw;
-  height: calc(var(--app-height, 100vh));
-}
-
-.brand-description-bg-img{
-  object-fit: cover;
-  height: calc(var(--app-height, 100vh)*1.7);
-}
-
-
 
 .brand-description {
   width: calc(7rem + 64vw);
@@ -521,12 +510,23 @@ h5 {
 .brand-description-bg{
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--app-height, 100vh)*1.3);
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   overflow: hidden;
 }
+
+
+
+.brand-description-bg-img{
+  width: 100vw;
+  object-fit: cover;
+  height: calc(var(--app-height, 100vh)*1.3);
+}
+
+
+
 
 #brand-description-img-1 {
   border-radius: 50%;
