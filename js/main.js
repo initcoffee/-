@@ -26,9 +26,10 @@ $(document).ready(function() {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
   }
-  // window.addEventListener('resize', appHeight)
+  if (window.innerWidth > 500) {
+  window.addEventListener('resize', appHeight)
   appHeight()
-
+}
   //
   // window.addEventListener('scroll', () => {
   //   const scrolled = window.scrollY / 2;

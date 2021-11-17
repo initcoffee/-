@@ -282,8 +282,10 @@ h5 {
   #init-sign{
     left:45%;
   }
+
   .brand-description{
       margin-left:10%;
+        top: 112%!important;
   }
   .brand-description h3 {
     padding-bottom: 2.5rem!important;
@@ -486,7 +488,7 @@ h5 {
   max-width: 60rem;
   padding: calc(0rem + 11vh) calc(1rem + 5vw);
   position: absolute;
-  top: 105%;
+  top: 107%;
 }
 /*
 #brand-description-1{
