@@ -27,7 +27,7 @@ $(document).ready(function() {
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
   }
   appHeight()
-  if (window.innerWidth > 500) {
+  if (window.innerWidth > 1030) {
   window.addEventListener('resize', appHeight)
   appHeight()
 }
