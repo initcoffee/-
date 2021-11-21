@@ -644,6 +644,7 @@ h5 {
 .bot-container h3 {
   font-size: calc(0.5rem + .4vw);
   color:white;
+  margin-top: 2%;
 }
 .policies{
   font-size: calc(0.4rem + .2vw);
@@ -656,7 +657,8 @@ h5 {
 }
 
 .ig-logo{
-  padding-bottom: 5%;
+  margin-bottom: 2%;
+  font-size: 30px;
 }
 
 .fa-instagram {
