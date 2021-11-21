@@ -643,8 +643,20 @@ h5 {
 
 .bot-container h3 {
   font-size: calc(0.5rem + .4vw);
-  padding-bottom: 2%;
+  color:white;
+}
+.policies{
+  font-size: calc(0.4rem + .2vw);
+  text-decoration: none;
+  color: lightgrey;
+}
 
+.bot-container span{
+  color: white;
+}
+
+.ig-logo{
+  padding-bottom: 5%;
 }
 
 .fa-instagram {
