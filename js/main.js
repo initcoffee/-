@@ -21,16 +21,22 @@ function cancel() {
 
 $(document).ready(function() {
 
-
-  const appHeight = () => {
+  function appHeight() {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
-  }
-  appHeight()
-  if (window.innerWidth > 1030) {
-  window.addEventListener('resize', appHeight)
-  appHeight()
+    window.oldheight = window.innerHeight;
 }
+  function checkHeight() {
+    if (window.innerHeight - window.oldheight > 100 || window.innerHeight - window.oldheight < 100) {
+      console.log(window.innerHeight - window.oldheight);
+      appHeight();
+  }
+}
+  appHeight();
+  checkHeight();
+  window.addEventListener('resize', checkHeight)
+
+
   //
   // window.addEventListener('scroll', () => {
   //   const scrolled = window.scrollY / 2;
