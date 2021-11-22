@@ -27,13 +27,12 @@ $(document).ready(function() {
     window.oldheight = window.innerHeight;
 }
   function checkHeight() {
-    if (window.innerHeight - window.oldheight > 100 || window.innerHeight - window.oldheight < 100) {
+    if (Math.abs(window.innerHeight - window.oldheight) > 200) {
       console.log(window.innerHeight - window.oldheight);
       appHeight();
   }
 }
   appHeight();
-  checkHeight();
   window.addEventListener('resize', checkHeight)
 
 
