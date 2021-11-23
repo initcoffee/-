@@ -17,12 +17,7 @@ function cancel() {
 };
 
 
-
-
 $(document).ready(function() {
-
-
-
 
   function appHeight() {
     const doc = document.documentElement;

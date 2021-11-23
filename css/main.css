@@ -291,7 +291,7 @@ h5 {
 
   .brand-description{
       margin-left:10%;
-        top: 105%!important;
+      right: 1%;
   }
   .brand-description h3 {
     padding-bottom: 2.5rem!important;
@@ -333,6 +333,7 @@ h5 {
 
   .brand-description{
       margin-left:20%;
+      right: 10%;
   }
 
   #init-sign{
@@ -373,6 +374,7 @@ h5 {
   }
   .brand-description{
       margin-left:30%;
+      right: 10%;
   }
   #init-sign{
     margin-top: 3rem;
@@ -411,6 +413,7 @@ h5 {
   }
   .brand-description{
       margin-left:30%;
+      right: 10%;
   }
     #init-sign{
       margin-top: 5rem;
@@ -449,6 +452,7 @@ h5 {
   }
   .brand-description{
       margin-left:30%;
+      right: 10%;
   }
     #init-sign{
       marign-top: 7rem;
@@ -470,7 +474,7 @@ h5 {
 .brand-description-container {
   width: 100vw;
   /* height: 100vh; */
-  height: calc(var(--app-height, 100vh));
+  height: calc(var(--app-height, 100vh)*1.3);
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -494,7 +498,7 @@ h5 {
   max-width: 60rem;
   padding: calc(0rem + 11vh) calc(1rem + 5vw);
   position: absolute;
-  top: 107%;
+  top: 0%;
 }
 
 .branddescription-transition-1{
@@ -549,7 +553,7 @@ h5 {
 .brand-description-bg-img{
   width: 100vw;
   object-fit: cover;
-  height: calc(var(--app-height, 100vh)*1.3);
+  height: var(--app-height, 100vh);
 }
 
 
