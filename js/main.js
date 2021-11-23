@@ -21,6 +21,9 @@ function cancel() {
 
 $(document).ready(function() {
 
+
+
+
   function appHeight() {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
@@ -35,6 +38,10 @@ $(document).ready(function() {
   appHeight();
   window.addEventListener('resize', checkHeight)
 
+  // var rellax = new Rellax('.rellax');
+
+
+
 
   //
   // window.addEventListener('scroll', () => {
@@ -43,32 +50,28 @@ $(document).ready(function() {
   //   root.style.setProperty('--top-container-translate', scrolled + 'px');
   //   console.log(scrolled)
   // })
+  //
 
-  var rellax = new Rellax('.rellax');
-  // $(window).scroll(function() {
-  //   var scrolled = $(window).scrollTop()/1.3;
-  //   // var scrolled2 = $(window).scrollTop();
-  //   // var elementOffset = $("#brand-description-container").offset().top;
-  //   // var distance = (elementOffset - scrolled2)/1.3;
-  //
-  //
-  //   let root = document.documentElement;
-  //   root.style.setProperty('--top-container-translate', scrolled + 'px');
-  //   // root.style.setProperty('--brand-description-container-translate', distance + 'px');
-  //
-  // });
+  $(window).scroll(function() {
+    var scrolled = $(window).scrollTop()/1.3;
 
-  // $(window).scroll(function() {
-  //   var scrolled = $(window).scrollTop();
-  //   var elementOffset = $("#brand-description-container").offset().top;
-  //   var distance = (elementOffset - scrolled);
-  //   // document.getElementById('top_container-fluid').style.transform ='0px,'
-  //
-  //
-  //   let root = document.documentElement;
-  //   root.style.setProperty('--brand-description-container-translate', distance + 'px');
-  //
-  // });
+
+    // var scrolled2 = $(window).scrollTop();
+    // var elementOffset = $("#brand-description-container").offset().top;
+    // var distance = (elementOffset - scrolled2)/1.3;
+
+
+
+    let root = document.documentElement;
+    root.style.setProperty('--top-container-translate', scrolled + 'px');
+    root.style.setProperty('--brand-description-container-translate', scrolled - window.oldheight + 'px');
+    // root.style.setProperty('--brand-description-container-translate', distance + 'px');
+
+  });
+
+
+// ANIMATIONS
+
   const branddescription = document.querySelector('.branddescription-animation-1');
   const branddescription2 = document.querySelector('.branddescription-animation-2');
   const branddescription3 = document.querySelector('.branddescription-animation-3');
