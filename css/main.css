@@ -670,3 +670,12 @@ h5 {
 .fa-instagram {
   color: white;
 }
+
+.carouselAboutUs img{
+  display: none;
+}
+
+canvas{
+  width: 100vw;
+  height: 33vw;
+}

@@ -23,13 +23,14 @@ $(document).ready(function() {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
     window.oldheight = window.innerHeight;
-}
+  }
+
   function checkHeight() {
     if (Math.abs(window.innerHeight - window.oldheight) > 200) {
       console.log(window.innerHeight - window.oldheight);
       appHeight();
+    }
   }
-}
   appHeight();
   window.addEventListener('resize', checkHeight)
 
@@ -47,7 +48,7 @@ $(document).ready(function() {
   // });
 
 
-// ANIMATIONS
+  // ANIMATIONS
 
   const branddescription = document.querySelector('.branddescription-animation-1');
   const branddescription2 = document.querySelector('.branddescription-animation-2');
@@ -167,5 +168,75 @@ $(document).ready(function() {
   });
 
   observer.observe(document.querySelector('.description-text'));
+
+  // // Define canvas
+  // var canvas = document.getElementById('carouselAboutUsPic');
+  // var ctx = canvas.getContext('2d');
+  // var img1 = document.getElementById("carouselAboutUsImg1");
+  // var img2 = document.getElementById("carouselAboutUsImg2");
+  // var img3 = document.getElementById("carouselAboutUsImg3");
+  // // var img4 = document.getElementById("carouselAboutUsImg4");
+  // // Aspect ratio to match canvas height 480
+  //
+  // var img1Width = img1.width / img1.height * 480;
+  // var img2Width = img2.width / img2.height * 480;
+  // var img3Width = img3.width / img3.height * 480
+  // // var img4Width = img4.width / img4.height * 480
+  //
+  // var x_1 = 200;
+  // var x_2 = x_1 + img1Width;
+  // var x_3 = x_2 + img2Width;
+  // // var x_4 = 2600;
+  // var sx_1 = 0.2 * img1.width;
+  // var sx_2 = 0.2 * img2.width;
+  // var sx_3 = 0.2 * img3.width;
+  // // var sx_4 = 0;
+  // var dx = -0.5;
+  // var dsx = -0.1;
+  // var speed = 5;
+  //
+  //
+  //
+  // img1.onload = function() {
+  //   return setInterval(draw, speed);
+  // }
+  //
+  //
+  // function draw() {
+  //   ctx.clearRect(0, 0, canvas.width, canvas.height)
+  //   ctx.drawImage(img1, sx_1, img1.height * 0.1, img1.width * 0.8, img1.height * 0.8, x_1, 0, img1Width, 480);
+  //   x_1 += dx;
+  //   sx_1 += dsx;
+  //   ctx.drawImage(img2, sx_2, img2.height * 0.1, img2.width * 0.8, img2.height * 0.8, x_2, 0, img2Width, 480);
+  //   x_2 += dx;
+  //   sx_2 += dsx;
+  //   ctx.drawImage(img3, sx_3, img3.height * 0.1, img3.width * 0.8, img3.height * 0.8, x_3, 0, img3Width, 480);
+  //   x_3 += dx;
+  //   sx_3 += dsx;
+  //   // ctx.drawImage(img4, sx_4, img4.height * 0.1, img4.width * 0.8, img4.height*0.8, x_4, 0, img4Width, 480);
+  //   // x_4 += dx;
+  //   // sx_4 += dsx;
+  //
+  //   // loop back
+  //   if (x_1 < -img1.width) {
+  //     x_1 = img2Width + img3Width;
+  //     sx_1 = 0.3 * img1.width;
+  //   };
+  //   if (x_2 < -img2.width) {
+  //     x_2 = img3Width + img1Width;
+  //     sx_2 = 0.3 * img2.width;
+  //   };
+  //   if (x_3 < -img3.width) {
+  //     x_3 = img1Width + img2Width;
+  //     sx_3 = 0.3 * img3.width;
+  //   };
+  //   // if (x_4 < -img4.width) {
+  //   //   x_4 = canvas.width;
+  //   //   sx_4 = 0.4* img4.height;
+  //   // };
+  // }
+
+  // ctx.drawImage(img3, 300, 0, img3Width, 480);
+  // ctx.drawImage(img4, 600, 0, img4Width, 480);
 
 });
