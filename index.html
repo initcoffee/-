@@ -3,228 +3,182 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:title" content="Init. Coffee" />
-  <meta property="og:url" content="https://www.initcoffee.com" />
-  <meta name="description" content="coffee blossom tea leaf tea beans way of life lifestyle locally roasted in Hong Kong roaster Made in Hong Kong" />
-  <meta property="og:description" content="Init. Coffee - Initiate Your Way of Life.">
-  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0548/9436/2859/files/preview.jpg">
-  <link rel="icon" type="image/png" href="image\favicon.png">
-  <title>Init.Coffee</title>
+
+  <link rel="stylesheet" id='stylesheet_main' href="css/main.css">
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- main.css -->
-  <link rel="stylesheet" id='stylesheet_main' href="css/main.css">
+
   <!-- googlefont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Voltaire&display=swap" rel="stylesheet">
-  <script src="js/main.js"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/7ac380394c.js" crossorigin="anonymous"></script>
   <!-- safari scroll (Polyfill) -->
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <!-- Rellax -->
-  <script src="js\rellax.min.js"></script>
+  <!-- fullpage.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js" integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
 
+  <!-- main.js -->
+  <script src="js/main.js"></script>
+
+  <!-- main.css -->
+  <link rel="stylesheet" id='stylesheet_main' href="css/main.css">
 
 </head>
 
 <body>
-  <!-- cookies -->
-  <div class="announcement-bar" id='shopify-section-announcement-bar'>
-    <a href="https://shop.initcoffee.com/policies/privacy-policy" class="announcement-bar__link">
-      <p class="announcement-bar__message">
-        By using our website, you agree to our Cookie and Privacy Policy.
-      </p>
-      <span class="announcement-bar__message"> Click here to learn more.
-      </span>
-    </a>
-    <button id="cancel-button" onclick="cancel()" class="btn btn-outline-secondary btn-sm" role="button" aria-pressed="true">X</button>
-  </div>
-  <!-- end of cookies -->
+  <div id="fullpage">
 
+    <div class="section" id="section1">
+      <!-- cookies -->
+      <div class="announcement-bar" id='shopify-section-announcement-bar'>
+        <a href="https://shop.initcoffee.com/policies/privacy-policy" class="announcement-bar__link">
+          <p class="announcement-bar__message">
+            By using our website, you agree to our Cookie and Privacy Policy.
+          </p>
+          <span class="announcement-bar__message"> Click here to learn more.
+          </span>
+        </a>
+        <button id="cancel-button" onclick="cancel()" class="btn btn-outline-secondary btn-sm" role="button" aria-pressed="true">X</button>
+      </div>
+      <!-- end of cookies -->
+      <div class="logo">
 
-  <div class="logo">
+        <a href="https://shop.initcoffee.com">
+          <img class="logo-img" src="image\logo2.png" alt="">
+        </a>
 
-    <a href="https://shop.initcoffee.com">
-      <img class="logo-img" src="image\logo2.png" alt="">
-    </a>
+      </div>
+      <div class="slogan" id='slogan' onclick="gotoMain()">
+        <span class='slogan-1'>I</span>
+        <span class='slogan-2'>N</span>
+        <span class='slogan-3'>I</span>
+        <span class='slogan-4'>T</span>
+        <span class='slogan-1'>I</span>
+        <span class='slogan-2'>A</span>
+        <span class='slogan-3'>T</span>
+        <span class='slogan-4'>E</span>
+        <span class='space'> </span>
+        <span class='slogan-2'>Y</span>
+        <span class='slogan-1'>O</span>
+        <span class='slogan-3'>U</span>
+        <span class='slogan-4'>R</span>
+        <span class='space'> </span>
+        <span class='slogan-2'>W</span>
+        <span class='slogan-3'>A</span>
+        <span class='slogan-1'>Y</span>
+        <span class='space'> </span>
+        <span class='slogan-4'>O</span>
+        <span class='slogan-3'>F</span>
+        <span class='space'> </span>
+        <span class='slogan-3'>L</span>
+        <span class='slogan-1'>I</span>
+        <span class='slogan-2'>F</span>
+        <span class='slogan-3'>E</span>
+      </div>
 
-  </div>
-  <div class="slogan" id='slogan' onclick="gotoMain()">
-    <span class='slogan-1'>I</span>
-    <span class='slogan-2'>N</span>
-    <span class='slogan-3'>I</span>
-    <span class='slogan-4'>T</span>
-    <span class='slogan-1'>I</span>
-    <span class='slogan-2'>A</span>
-    <span class='slogan-3'>T</span>
-    <span class='slogan-4'>E</span>
-    <span class='space'> </span>
-    <span class='slogan-2'>Y</span>
-    <span class='slogan-1'>O</span>
-    <span class='slogan-3'>U</span>
-    <span class='slogan-4'>R</span>
-    <span class='space'> </span>
-    <span class='slogan-2'>W</span>
-    <span class='slogan-3'>A</span>
-    <span class='slogan-1'>Y</span>
-    <span class='space'> </span>
-    <span class='slogan-4'>O</span>
-    <span class='slogan-3'>F</span>
-    <span class='space'> </span>
-    <span class='slogan-3'>L</span>
-    <span class='slogan-1'>I</span>
-    <span class='slogan-2'>F</span>
-    <span class='slogan-3'>E</span>
-  </div>
+      <div class="arrow" id='arrow' onclick="gotoMain()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#top_carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#top_carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+      <div class="slide" id="slide1-1">
+        <div class="fp-bg"></div>
+      </div>
+      <div class="slide" id="slide1-2">
+        <div class="fp-bg"></div>
+      </div>
+      <div class="slide" id="slide1-3">
+        <div class="fp-bg"></div>
+      </div>
+    </div>
 
-  <div class="arrow" id='arrow' onclick="gotoMain()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <div class="section" id="section2">
+      <div class="fp-bg"></div>
+      <div class="brand-description" id='brand-description-1'>
 
-  <div class="top_container-fluid rellax" id='top_container-fluid' data-rellax-speed="-8">
-    <div id="top_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img srcset='image\20190805-DSC05209M.jpg 480w, image\20190805-DSC05209.jpg 800w' sizes='(max-width:900px) 480px, 800px' src="image\20190805-DSC05209.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <h5></h5>
-            <p></p>
+        <h3 class='description-text'>
+          <span class='branddescription-animation-1'>S</span><span class='branddescription-animation-2'>a</span><span class='branddescription-animation-3'>v</span><span class='branddescription-animation-4'>o</span><span
+            class='branddescription-animation-5'>u</span><span class='branddescription-animation-6'>r</span><span class='branddescription-animation-7'>i</span><span class='branddescription-animation-8'>n</span><span
+            class='branddescription-animation-9'>g</span>
+          <span class='branddescription-animation-10'>e</span><span class='branddescription-animation-11'>v</span><span class='branddescription-animation-33'>e</span><span class='branddescription-animation-12'>r</span><span
+            class='branddescription-animation-13'>y</span>
+          <span class='branddescription-animation-14'>p</span><span class='branddescription-animation-15'>a</span><span class='branddescription-animation-16'>r</span><span class='branddescription-animation-17'>t</span>
+          <span class='branddescription-animation-18'>o</span><span class='branddescription-animation-19'>f</span>
+          <span class='branddescription-animation-20'>t</span><span class='branddescription-animation-21'>h</span><span class='branddescription-animation-22'>e</span>
+          <span class='branddescription-animation-23'>c</span><span class='branddescription-animation-24'>o</span><span class='branddescription-animation-25'>f</span><span class='branddescription-animation-26'>f</span><span
+            class='branddescription-animation-27'>e</span><span class='branddescription-animation-28'>e</span>
+          <span class='branddescription-animation-29'>t</span><span class='branddescription-animation-30'>r</span><span class='branddescription-animation-31'>e</span><span class='branddescription-animation-32'>e</span>
+        </h3>
+        <!-- <h5>
+                Init.coffee embraces the full cycle of a coffee tree.
+              </h5> -->
+        <h5 class='description-text2'>From coffee blossom, leaf, to the ripening fruits of the coffee cherry, we bring you an extraordinary experience of aromatic indulgence.</h5>
+        <img id='init-sign' src="image\initcoffee_sign.png" alt="">
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <div class="main-body-container" id='main-body-container'>
+        <div class="row">
+          <div class="about-us col-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/pages/about-us';">
+            <img class='main-body-bg' src="image\20191116-DSC08554.jpg" alt="">
+            <h3>Our Values</h3>
+            <img class='thumbnail' src="image\book.png" alt="">
+            <h5>Where the Init. Journey Begins</h5>
+          </div>
+          <div class="leaf col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee-leaf';">
+            <img class='main-body-bg' src="image\leaf.jpg" alt="">
+            <h3>Coffee Leaf</h3>
+            <img class='thumbnail' src="image\leaf_thumbnail.png" alt="">
+            <h5>Noticing the Unnoticed</h5>
+            <h5 class='main-body-extra-caption'>Nourishing with a Hint of Green</h5>
+          </div>
+          <div class="blossom col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee-blossom';">
+            <img class='main-body-bg' src="image\blossom2_3.png" alt="">
+            <h3>Coffee Blossom</h3>
+            <img class='thumbnail' src="image\blossom.png" alt="">
+            <h5>A Time to Plant, and a Time to Harvest</h5>
+          </div>
+          <div class="coffee col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee';">
+            <img class='main-body-bg' src="image\coffeebean.jpg" alt="">
+            <h3>Coffee Bean</h3>
+            <img class='thumbnail' src="image\bean_transparent_light.png" alt="">
+            <h5>Roasting for Aromatic Excellence</h5>
+          </div>
+          <div class="init-select col-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/blogs/news';">
+            <img class='main-body-bg' src="image\initselect_website photo_final.jpg" alt="">
+            <h3>Init. Select</h3>
+            <img class='thumbnail' src="image\initselect_website icon2.png" alt="" style="height:2rem;">
+            <h5>Travel and Explore</h5>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img srcset='image\20190920-DSC06556M.jpg 480w, image\20190920-DSC06556.jpg 800w' sizes='(max-width:900px) 480px, 800px' src="image\20190920-DSC06556.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <h5></h5>
-            <p></p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img srcset='image\20190921-DSC06652M.jpg 480w, image\20190921-DSC06652.jpg 800w' sizes='(max-width:900px) 480px, 800px' src="image\20190921-DSC06652.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block">
-            <h5></h5>
-            <p></p>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="brand-description-container" id='brand-description-container-1'>
-    <div class="brand-description-bg">
-      <div class="rellax" data-rellax-speed="-8" data-rellax-percentage="0.5">
-        <img class='brand-description-bg-img' src="image/20211112-DSC09027.JPG" alt="">
+      <div class='bot-container'>
+        <h3>© Init. Coffee</h3>
+        <a class='ig-logo' href="https://www.instagram.com/init.coffee/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class='policies' href="https://shop.initcoffee.com/policies/privacy-policy">Privacy Policy</a>
+        <a class='policies' href="https://shop.initcoffee.com/policies/terms-of-service">Terms of Service</a>
       </div>
-    </div>
-    <div class="brand-description" id='brand-description-1'>
-
-      <h3 class='description-text'>
-        <span class='branddescription-animation-1'>S</span><span class='branddescription-animation-2'>a</span><span class='branddescription-animation-3'>v</span><span class='branddescription-animation-4'>o</span><span
-          class='branddescription-animation-5'>u</span><span class='branddescription-animation-6'>r</span><span class='branddescription-animation-7'>i</span><span class='branddescription-animation-8'>n</span><span
-          class='branddescription-animation-9'>g</span>
-        <span class='branddescription-animation-10'>e</span><span class='branddescription-animation-11'>v</span><span class='branddescription-animation-33'>e</span><span class='branddescription-animation-12'>r</span><span
-          class='branddescription-animation-13'>y</span>
-        <span class='branddescription-animation-14'>p</span><span class='branddescription-animation-15'>a</span><span class='branddescription-animation-16'>r</span><span class='branddescription-animation-17'>t</span>
-        <span class='branddescription-animation-18'>o</span><span class='branddescription-animation-19'>f</span>
-        <span class='branddescription-animation-20'>t</span><span class='branddescription-animation-21'>h</span><span class='branddescription-animation-22'>e</span>
-        <span class='branddescription-animation-23'>c</span><span class='branddescription-animation-24'>o</span><span class='branddescription-animation-25'>f</span><span class='branddescription-animation-26'>f</span><span
-          class='branddescription-animation-27'>e</span><span class='branddescription-animation-28'>e</span>
-        <span class='branddescription-animation-29'>t</span><span class='branddescription-animation-30'>r</span><span class='branddescription-animation-31'>e</span><span class='branddescription-animation-32'>e</span>
-      </h3>
-      <!-- <h5>
-            Init.coffee embraces the full cycle of a coffee tree.
-          </h5> -->
-      <h5 class='description-text2'>From coffee blossom, leaf, to the ripening fruits of the coffee cherry, we bring you an extraordinary experience of aromatic indulgence.</h5>
-      <img id='init-sign' src="image\initcoffee_sign.png" alt="">
     </div>
 
   </div>
-
-  <!-- <div class="brand-description-container" id='brand-description-container-2'>
-      <div class="rellax" data-rellax-percentage="0.5" data-rellax-speed="0">
-        <div class="brand-description" id='brand-description-2'>
-          <h3>Savouring every part of the coffee tree</h3>
-          <h5>
-            Init.coffee embraces the full cycle of a coffee tree.
-          </h5>
-          <h5>From coffee blossom, leaf, to the ripening fruits of the coffee cherry, we bring to you an extraordinary experience of aromatic indulgence.</h5>
-        </div>
-      </div>
-    </div> -->
-
-  <div class="main-body-container" id='main-body-container'>
-    <div class="row">
-      <div class="about-us col-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/pages/about-us';">
-        <img class='main-body-bg' src="image\20191116-DSC08554.jpg" alt="">
-        <h3>Our Vision</h3>
-        <img class='thumbnail' src="image\book.png" alt="">
-        <h5>Where the Init. Journey Begins</h5>
-      </div>
-      <div class="leaf col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee-leaf';">
-        <img class='main-body-bg' src="image\leaf.jpg" alt="">
-        <h3>Coffee Leaf</h3>
-        <img class='thumbnail' src="image\leaf_thumbnail.png" alt="">
-        <h5>Noticing the Unnoticed</h5>
-        <h5 class='main-body-extra-caption'>Nourishing with a Hint of Green</h5>
-      </div>
-      <div class="blossom col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee-blossom';">
-        <img class='main-body-bg' src="image\blossom2_3.png" alt="">
-        <h3>Coffee Blossom</h3>
-        <img class='thumbnail' src="image\blossom.png" alt="">
-        <h5>A Time to Plant, and a Time to Harvest</h5>
-      </div>
-      <div class="coffee col-md-4 col-sm-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/collections/coffee';">
-        <img class='main-body-bg' src="image\coffeebean.jpg" alt="">
-        <h3>Coffee Bean</h3>
-        <img class='thumbnail' src="image\bean_transparent_light.png" alt="">
-        <h5>Roasting for Aromatic Excellence</h5>
-      </div>
-      <div class="init-select col-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/blogs/news';">
-        <img class='main-body-bg' src="image\initselect_website photo_final.jpg" alt="">
-        <h3>Init. Select</h3>
-        <img class='thumbnail' src="image\initselect_website icon2.png" alt="" style="height:2rem;">
-        <h5>Travel and Explore</h5>
-      </div>
-    </div>
-  </div>
-
-
-  <div class='bot-container'>
-    <h3>© Init. Coffee</h3>
-    <a class='ig-logo' href="https://www.instagram.com/init.coffee/">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a class='policies' href="https://shop.initcoffee.com/policies/privacy-policy">Privacy Policy</a>
-    <a class='policies' href="https://shop.initcoffee.com/policies/terms-of-service">Terms of Service</a>
-  </div>
-
-
-  <!-- <div class="carouselAboutUs">
-    <canvas id="carouselAboutUsPic" width="1400" height="480"></canvas>
-    <img id='carouselAboutUsImg1' src="https://cdn.shopify.com/s/files/1/0548/9436/2859/files/coffee1.jpg?v=1637743083" alt="">
-    <img id='carouselAboutUsImg2' src="https://cdn.shopify.com/s/files/1/0548/9436/2859/files/coffee2.jpg?v=1637743083" alt="">
-    <img id='carouselAboutUsImg3' src="https://cdn.shopify.com/s/files/1/0548/9436/2859/files/coffee3.jpg?v=1637743083" alt="">
-
-  </div> -->
 
 
 </body>
-
 
 </html>

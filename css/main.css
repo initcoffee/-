@@ -1,28 +1,14 @@
 :root {
-  --top-container-translate: 0px;
-  --brand-description-container-translate: 0px;
-  --app-height: 100%;
+
 }
 
 html {
   scroll-behavior: smooth;
-  overscroll-behavior-y: none;
-  /* test */
-  /* overflow: hidden; */
-  /* test */
-
 }
 
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
-  overscroll-behavior: none;
-  /* test */
-  /* position: fixed;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  height: 100%; */
-  /* test */
 }
 
 
@@ -86,6 +72,45 @@ h5 {
   bottom:20%;
 }
 
+.slide{
+    animation: top_container-animation 7s;
+}
+
+
+.fp-bottom{
+  bottom:0;
+  left: 46vw!important;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background:white;
+  opacity: 0.3;
+}
+
+.fp-slidesContainer {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-slide {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .7s ease-in-out;
+}
+
+.fp-slide.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
+
+
 /* SLOGAN and LOGO ANIMATION */
 @keyframes slogan-animation {
   0% {
@@ -123,19 +148,9 @@ h5 {
   100% {
     opacity: 100%;
   }
+
 }
 
-.top_container-fluid {
-  animation: top_container-animation 5s;
-  position: relative;
-  z-index: -2;
-  scroll-snap-align: start;
-}
-
-.top_carousel {
-  display: flex;
-  justify-content: center;
-}
 
 .logo-img {
   animation: logo-animation 4s;
@@ -193,10 +208,6 @@ h5 {
   position: fixed;
 } */
 
-.top_container-fluid, .top_carousel, .carousel-inner, .carousel-item, .w-100 {
-  height: calc(var(--app-height, 100vh));
-  width: 100vw;
-}
 
 
 /* ARROW */
@@ -249,10 +260,6 @@ h5 {
     /* scroll-snap-type: y mandatory; */
   }
 
-  .carousel-control-next, .carousel-control-prev {
-    top: 80%;
-    width: 15%;
-  }
 
   .logo-img {
     width: 35vw;
@@ -302,10 +309,6 @@ h5 {
 }
 
 @media (max-width: 900px) and (min-width: 501px) {
-  .carousel-control-next, .carousel-control-prev {
-    top: 92%;
-    width: 40%;
-  }
 
   .arrow {
     top: 70%;
@@ -344,10 +347,6 @@ h5 {
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
-  .carousel-control-next, .carousel-control-prev {
-    top: 92%;
-    width: 50%;
-  }
 
   .arrow {
     top: 70%;
@@ -383,10 +382,7 @@ h5 {
 }
 
 @media (min-width: 1201px) {
-  .carousel-control-next, .carousel-control-prev {
-    top: 92%;
-    width: 60%;
-  }
+
 
   .arrow {
     top: 70%;
@@ -422,10 +418,7 @@ h5 {
 }
 
 @media (min-width: 2100px) {
-  .carousel-control-next, .carousel-control-prev {
-    top: 92%;
-    width: 80%;
-  }
+
 
   .arrow {
     top: 70%;
@@ -462,25 +455,17 @@ h5 {
 
 @keyframes zoomout {
   0% {
-    transform: scale(1.5);
+    transform-origin: left;
   }
+
+  100% {
+      transform: scale(1.2);
+      transform-origin: left;
+    }
 }
 
-.carousel-item img {
-  object-fit: cover;
-  animation: 25s zoomout;
-}
 
-.brand-description-container {
-  width: 100vw;
-  /* height: 100vh; */
-  height: calc(var(--app-height, 100vh));
-  overflow: hidden;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 /* #brand-description-container-1{
   background-image: url("../image/20211112-DSC09027.JPG");
@@ -498,7 +483,7 @@ h5 {
   max-width: 60rem;
   padding: calc(0rem + 11vh) calc(1rem + 5vw);
   position: absolute;
-  top: 105%;
+  top: 0%;
 }
 
 .branddescription-transition-1{
@@ -676,6 +661,35 @@ h5 {
 }
 
 canvas{
-  width: 100vw;
-  height: 33vw;
+  width:100vw;
+  /* height:calc(var(--canvasWidth)/3); */
+}
+
+
+
+
+#slide1-1{
+    background-image: url('https://cdn.shopify.com/s/files/1/0548/9436/2859/files/coffee1.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+#slide1-2{
+    background-image: url('C:/Users/user/Atom/fullpage test/image/20190805-DSC05209.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+#slide1-3 {
+    background-image: url('C:/Users/user/Atom/fullpage test/image/20190920-DSC06556.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+
+#section2{
+  background-image: url('C:/Users/user/Atom/fullpage test/image/20211112-DSC09027.JPG');
+  background-size: cover;
+  background-color: black;
+  background-position: center 80%;
+
 }
