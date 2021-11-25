@@ -54,7 +54,7 @@ h5 {
 
 .announcement-bar__link {
   color: black;
-  font-size: calc(0.7rem + .2vw);
+  font-size: calc(1.2rem + .2vw);
   text-decoration: none;
 }
 
