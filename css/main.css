@@ -675,19 +675,19 @@ canvas{
 }
 
 #slide1-2{
-    background-image: url('C:/Users/user/Atom/fullpage test/image/20190805-DSC05209.jpg');
+    background-image: url('../image/20190805-DSC05209.jpg');
     background-size: cover;
     background-position: center 80%;
 }
 #slide1-3 {
-    background-image: url('C:/Users/user/Atom/fullpage test/image/20190920-DSC06556.jpg');
+    background-image: url('../image/20190920-DSC06556.jpg');
     background-size: cover;
     background-position: center 80%;
 }
 
 
 #section2{
-  background-image: url('C:/Users/user/Atom/fullpage test/image/20211112-DSC09027.JPG');
+  background-image: url('../image/20211112-DSC09027.JPG');
   background-size: cover;
   background-color: black;
   background-position: center 80%;
