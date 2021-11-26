@@ -1,8 +1,8 @@
-function gotoMain() {
-  document.getElementById('brand-description-container-1').scrollIntoView({
-    behavior: 'smooth'
-  });
-};
+// function gotoMain() {
+//   document.getElementById('brand-description-container-1').scrollIntoView({
+//     behavior: 'smooth'
+//   });
+// };
 
 function cancel() {
   document.getElementById("shopify-section-announcement-bar").style.display = "none";
@@ -12,6 +12,9 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     //options here
     licenseKey: 'A5C73EA9-E877473E-86CBE264-B639EBF0',
+    parallax: true,
+    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+    parallaxKey: "24BCEE42-573044AA-8F32962D-86FDD83C",
     autoScrolling: true,
     scrollOverflow: true,
     loopHorizontal: true,
@@ -39,7 +42,10 @@ $(document).ready(function() {
         clearInterval(slideTimeout);
       }
     }
+
+
   });
+
 
 
 

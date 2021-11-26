@@ -9,6 +9,7 @@ html {
 body {
   font-family: 'Bodoni Moda', serif;
   color: white;
+  background-color: black;
 }
 
 
@@ -668,28 +669,27 @@ canvas{
 
 
 
-#slide1-1{
+#slide1-1 .fp-bg{
     background-image: url('https://cdn.shopify.com/s/files/1/0548/9436/2859/files/coffee1.jpg');
     background-size: cover;
     background-position: center 80%;
 }
 
-#slide1-2{
+#slide1-2 .fp-bg{
     background-image: url('../image/20190805-DSC05209.jpg');
     background-size: cover;
     background-position: center 80%;
 }
-#slide1-3 {
+#slide1-3 .fp-bg{
     background-image: url('../image/20190920-DSC06556.jpg');
     background-size: cover;
     background-position: center 80%;
 }
 
 
-#section2{
+#section2 .fp-bg{
   background-image: url('../image/20211112-DSC09027.JPG');
   background-size: cover;
-  background-color: black;
   background-position: center 80%;
 
 }

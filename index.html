@@ -27,15 +27,11 @@
   <!-- safari scroll (Polyfill) -->
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <!-- fullpage.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js" integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow==" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/fullpage.parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js" integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.js" integrity="sha512-+DJqTZei2r0qDU75bKSfWggvHgPveNzalRB0ZxQpRhuRw9iLmQMr4Djbl+qg5xiuXPNiWXAjzXKKw4WJxUxr4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- main.js -->
   <script src="js/main.js"></script>
 
@@ -112,6 +108,8 @@
       </div>
     </div>
 
+
+
     <div class="section" id="section2">
       <div class="fp-bg"></div>
       <div class="brand-description" id='brand-description-1'>
@@ -137,7 +135,7 @@
       </div>
     </div>
 
-    <div class="section" id="section3">
+    <div class="section fp-auto-height" id="section3">
       <div class="main-body-container" id='main-body-container'>
         <div class="row">
           <div class="about-us col-12" style="cursor: pointer;" onclick="window.location='https://shop.initcoffee.com/pages/about-us';">
@@ -173,6 +171,7 @@
           </div>
         </div>
       </div>
+      <div class="section fp-auto-height">
       <div class='bot-container'>
         <h3>© Init. Coffee</h3>
         <a class='ig-logo' href="https://www.instagram.com/init.coffee/">
@@ -180,6 +179,7 @@
         </a>
         <a class='policies' href="https://shop.initcoffee.com/policies/privacy-policy">Privacy Policy</a>
         <a class='policies' href="https://shop.initcoffee.com/policies/terms-of-service">Terms of Service</a>
+      </div>
       </div>
     </div>
 
