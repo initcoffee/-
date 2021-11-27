@@ -312,7 +312,7 @@ h5 {
   }
 
   .logo-img {
-    width: 20vw;
+    width: 35vw;
   }
 
   .about-us h3, .coffee h3, .blossom h3, .leaf h3, .init-select h3 {
@@ -477,7 +477,7 @@ h5 {
 
 .brand-description {
   width: calc(7rem + 64vw);
-  max-width: 60rem;
+  max-width: 82rem;
   padding: calc(0rem + 11vh) calc(1rem + 5vw);
   position: absolute;
   top: 0%;
@@ -512,11 +512,11 @@ h5 {
 
 .brand-description h3 {
   padding-bottom: 3rem;
-  font-size: calc(0.9rem + 3vw);
+  font-size: calc(2rem + 2.5vw);
 }
 
 .brand-description h5 {
-  font-size: calc(0.8rem + 0.3vw);
+  font-size: calc(1.8rem + 0.3vw);
   padding-left: 1.5rem;
 }
 
