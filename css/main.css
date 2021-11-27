@@ -673,6 +673,3 @@ canvas{
   background-position: center 80%;
 
 }
-body > div:nth-child(2){
-  display: none!important;
-}
