@@ -1,8 +1,9 @@
-// function gotoMain() {
-//   document.getElementById('brand-description-container-1').scrollIntoView({
-//     behavior: 'smooth'
-//   });
-// };
+function gotoMain() {
+  // document.getElementById('section2').scrollIntoView({
+  //   behavior: 'smooth'
+  // });
+  fullpage_api.moveTo(2);
+};
 
 function cancel() {
   document.getElementById("shopify-section-announcement-bar").style.display = "none";
@@ -13,14 +14,14 @@ function cancel() {
 
 $(document).ready(function() {
   // Set body bg to black after 5 secs delay
-  setTimeout(() => $("body").css("background-color", "black"), 5000) // in milli seconds
+  // setTimeout(() => $("body").css("background-color", "black"), 7000) // in milli seconds
 
 
 
   $('#fullpage').fullpage({
     //options here
-    licenseKey: 'A5C73EA9-E877473E-86CBE264-B639EBF0',
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    licenseKey: "A5C73EA9-E877473E-86CBE264-B639EBF0",
+    anchors: ['firstPage', 'secondPage', 'thirdPage'],
     parallax: true,
     parallaxOptions: {type: 'cover', percentage: 62, property: 'translate'},
     parallaxKey: "24BCEE42-573044AA-8F32962D-86FDD83C",
@@ -37,33 +38,62 @@ $(document).ready(function() {
 
       //on page load, start the slideshow
       slideTimeout = setInterval(function() {
+        // $('.fp-slidesContainer').css("transition","visibility 1s ease-in-out!important");
+        // $('.fp-slidesContainer').css("visibility","hidden");
+        //
+        // setTimeout(() =>{
+        //         $.fn.fullpage.setScrollingSpeed(0);
+        //         $.fn.fullpage.moveSlideRight();
+        //         $.fn.fullpage.setScrollingSpeed(700);},
+        //         1000)
+        //
+        // $('.fp-slidesContainer').css("visibility","visible");
+        // $("slide1-1").css("animation","zoomout 21s infinite");
         $.fn.fullpage.moveSlideRight();
         document.getElementById("slide1-1").style.animation="zoomout 21s infinite";
         document.getElementById("slide1-2").style.animation="zoomout 21s infinite";
         document.getElementById("slide1-3").style.animation="zoomout 21s infinite";
-
       }, 7000);
     },
 
-    onLeave: function(index, direction) {
+    onLeave: function(origin, destination, direction) {
       //after leaving section 1 (home) and going anywhere else, whether scrolling down to next section or clicking a nav link, this SHOULD stop the slideshow and allow you to navigate the site...but it does not
-      if (index == '1') {
+      if (origin.index == '0') {
         console.log('on leaving the slideshow/section1');
         clearInterval(slideTimeout);
-      }
+        $("body").css("background-color", "black");
+      };
+      if(origin.index == '1' & direction == 'up'){
+        $("body").css("background-color", "white");
+        slideTimeout = setInterval(function() {
+          $.fn.fullpage.setScrollingSpeed(0);
+          $.fn.fullpage.moveSlideRight();
+          $.fn.fullpage.setScrollingSpeed(700);
+          $("slide1-1").css("animation","zoomout 21s infinite");
+          // document.getElementById("slide1-1").style.animation="zoomout 21s infinite";
+          document.getElementById("slide1-2").style.animation="zoomout 21s infinite";
+          document.getElementById("slide1-3").style.animation="zoomout 21s infinite";
+        }, 7000);
+      };
+
     },
 
-    // // Hide the slides container before the next slide loads
-    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-    //
-    //     $('.fp-slidesContainer').hide(1000);
+
+    // onSlideLeave: function(anchorLink, index, slideIndex, direction) {
+    //     $.fn.fullpage.setScrollingSpeed(0);
+    //     $('.fp-section').find('.fp-slidesContainer').fadeOut(200);
     // },
     //
     // // Display the slides container by fading it in after the next slide has been loaded.
     // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-    //     $('.fp-section').find('.fp-slidesContainer').fadeIn(1000);
-    //
+    //     $('.fp-section').find('.fp-slidesContainer').fadeIn(200);
+    //     $.fn.fullpage.setScrollingSpeed(700);
     // },
+    //
+
+
+
+
 
 
   });

@@ -14,12 +14,12 @@ body {
 
 
 h3 {
-  font-size: calc(0.9rem + .6vw);
+  font-size: calc(1.5rem + .6vw);
   color: cornsilk;
 }
 
 h5 {
-  font-size: calc(0.7rem + .3vw);
+  font-size: calc(1rem + .1vw);
     color: cornsilk;
 }
 
@@ -37,7 +37,7 @@ h5 {
 
 .slogan {
   top: 75%;
-  font-size: calc(0.8rem + .6vw);
+  font-size: calc(2rem + .1vw);
 }
 
 /* cookies */
@@ -54,7 +54,7 @@ h5 {
 
 .announcement-bar__link {
   color: black;
-  font-size: calc(1.2rem + .2vw);
+  font-size: calc(1.2rem + .05vw);
   text-decoration: none;
 }
 
@@ -76,19 +76,35 @@ h5 {
     animation: top_container-animation 7s;
 }
 
+@media (min-width:1500px){
+  .fp-bottom{
+    left: 47.5vw!important;
+  }
+}
+
+@media (max-width:1499px){
+  .fp-bottom{
+    left: 46vw!important;
+  }
+}
 
 .fp-bottom{
   bottom:0;
-  left: 46vw!important;
 }
+
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background:white;
   opacity: 0.3;
 }
 
+.fp-controlArrow.fp-next{
+  right: 50px;
+}
 
-
+.fp-controlArrow.fp-prev{
+  left: 50px;
+}
 
 
 
@@ -330,7 +346,7 @@ h5 {
 @media (min-width: 901px) and (max-width: 1200px) {
 
   .arrow {
-    top: 70%;
+    top: 75%;
   }
 
   .logo-img {
@@ -440,7 +456,7 @@ h5 {
   }
 
   100% {
-      transform: scale(1.2);
+      transform: scale(1.05);
       transform-origin: left;
     }
 }
