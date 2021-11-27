@@ -8,12 +8,21 @@ function cancel() {
   document.getElementById("shopify-section-announcement-bar").style.display = "none";
 };
 
+
+
+
 $(document).ready(function() {
+  // Set body bg to black after 5 secs delay
+  setTimeout(() => $("body").css("background-color", "black"), 5000) // in milli seconds
+
+
+
   $('#fullpage').fullpage({
     //options here
     licenseKey: 'A5C73EA9-E877473E-86CBE264-B639EBF0',
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
     parallax: true,
-    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+    parallaxOptions: {type: 'cover', percentage: 62, property: 'translate'},
     parallaxKey: "24BCEE42-573044AA-8F32962D-86FDD83C",
     autoScrolling: true,
     scrollOverflow: true,
@@ -21,6 +30,8 @@ $(document).ready(function() {
     navigation: true,
     navigationTooltips:[' ',' ',' '],
     slidesNavigation: true,
+
+
     afterRender: function() {
       document.getElementById("slide1-1").style.animation="zoomout 21s infinite,top_container-animation 7s";
 
@@ -34,14 +45,25 @@ $(document).ready(function() {
       }, 7000);
     },
 
-
     onLeave: function(index, direction) {
       //after leaving section 1 (home) and going anywhere else, whether scrolling down to next section or clicking a nav link, this SHOULD stop the slideshow and allow you to navigate the site...but it does not
       if (index == '1') {
         console.log('on leaving the slideshow/section1');
         clearInterval(slideTimeout);
       }
-    }
+    },
+
+    // // Hide the slides container before the next slide loads
+    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+    //
+    //     $('.fp-slidesContainer').hide(1000);
+    // },
+    //
+    // // Display the slides container by fading it in after the next slide has been loaded.
+    // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+    //     $('.fp-section').find('.fp-slidesContainer').fadeIn(1000);
+    //
+    // },
 
 
   });
