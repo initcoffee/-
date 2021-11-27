@@ -24,7 +24,7 @@ $(document).ready(function() {
     anchors: ['firstPage', 'secondPage', 'thirdPage'],
     parallax: true,
     parallaxOptions: {type: 'cover', percentage: 62, property: 'translate'},
-    parallaxKey: "24BCEE42-573044AA-8F32962D-86FDD83C",
+    parallaxKey: "aW5pdGNvZmZlZS5jb21fV00yY0dGeVlXeHNZWGc9NTU2",
     autoScrolling: true,
     scrollOverflow: true,
     loopHorizontal: true,
