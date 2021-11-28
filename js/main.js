@@ -39,7 +39,7 @@ $(document).ready(function() {
       //on page load, start the slideshow
         // var i=2;
       slideTimeout = setInterval(function() {
-        $.fn.fullpage.moveSlideRight();
+        // $.fn.fullpage.moveSlideRight();
         // console.log(i);
         // $('.fp-slidesContainer').css('animation',"");
         // $('.fp-slidesContainer').css("animation","top_container-animation 2s");
@@ -71,7 +71,7 @@ $(document).ready(function() {
           //
           // $('.fp-slidesContainer').css("animation","top_container-animation 2s");
           // $.fn.fullpage.setScrollingSpeed(0);
-          $.fn.fullpage.moveSlideRight();
+          // $.fn.fullpage.moveSlideRight();
           // $.fn.fullpage.setScrollingSpeed(700);
           // $('.fp-slidesContainer').css("transition","all 2s!important");
 
