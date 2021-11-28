@@ -46,13 +46,13 @@ $(document).ready(function() {
         // $.fn.fullpage.silentMoveTo(1,i);
         // i++;
         // $('.fp-slidesContainer').css("transition","all 2s!important");
-        document.getElementById("slide1-1").style.animation="zoomout 21s infinite";
-        document.getElementById("slide1-2").style.animation="zoomout 21s infinite";
-        document.getElementById("slide1-3").style.animation="zoomout 21s infinite";
+        document.getElementById("slide1-1").style.animation="zoomout 27s infinite";
+        document.getElementById("slide1-2").style.animation="zoomout 27s infinite";
+        document.getElementById("slide1-3").style.animation="zoomout 27s infinite";
         // if (i == 3){
         //   i=1;
         // };
-      }, 7000);
+      }, 9000);
 
     },
 
@@ -76,10 +76,10 @@ $(document).ready(function() {
           // $('.fp-slidesContainer').css("transition","all 2s!important");
 
           // $.fn.fullpage.moveSlideRight();
-          document.getElementById("slide1-1").style.animation="zoomout 21s infinite";
-          document.getElementById("slide1-2").style.animation="zoomout 21s infinite";
-          document.getElementById("slide1-3").style.animation="zoomout 21s infinite";
-        }, 7000);
+          document.getElementById("slide1-1").style.animation="zoomout 27s infinite";
+          document.getElementById("slide1-2").style.animation="zoomout 27s infinite";
+          document.getElementById("slide1-3").style.animation="zoomout 27s infinite";
+        }, 9000);
 
       };
     },
