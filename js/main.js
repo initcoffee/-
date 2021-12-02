@@ -23,14 +23,15 @@ $(document).ready(function() {
     licenseKey: "A5C73EA9-E877473E-86CBE264-B639EBF0",
     anchors: ['firstPage', 'secondPage', 'thirdPage'],
     parallax: true,
-    parallaxOptions: {type: 'cover', percentage: 90, property: 'translate'},
+    parallaxOptions: {type: 'cover', percentage: 80, property: 'translate'},
     parallaxKey: "aW5pdGNvZmZlZS5jb21fV00yY0dGeVlXeHNZWGc9NTU2",
-    autoScrolling: false,
+    autoScrolling: true,
     scrollOverflow: true,
     loopHorizontal: true,
     navigation: true,
     navigationTooltips:[' ',' ',' '],
     slidesNavigation: true,
+    controlArrows: false,
 
 
 
