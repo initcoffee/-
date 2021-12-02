@@ -31,7 +31,8 @@ $(document).ready(function() {
     navigation: true,
     navigationTooltips:[' ',' ',' '],
     slidesNavigation: true,
-    controlArrows: false,
+    controlArrows: true,
+
 
 
 
