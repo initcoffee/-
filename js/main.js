@@ -25,13 +25,12 @@ $(document).ready(function() {
     parallax: true,
     parallaxOptions: {type: 'cover', percentage: 90, property: 'translate'},
     parallaxKey: "aW5pdGNvZmZlZS5jb21fV00yY0dGeVlXeHNZWGc9NTU2",
-    autoScrolling: true,
+    autoScrolling: false,
     scrollOverflow: true,
     loopHorizontal: true,
     navigation: true,
     navigationTooltips:[' ',' ',' '],
     slidesNavigation: true,
-    scrollBar: true,
 
 
 
