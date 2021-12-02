@@ -23,7 +23,7 @@ $(document).ready(function() {
     licenseKey: "A5C73EA9-E877473E-86CBE264-B639EBF0",
     anchors: ['firstPage', 'secondPage', 'thirdPage'],
     parallax: true,
-    parallaxOptions: {type: 'cover', percentage: 62, property: 'translate'},
+    parallaxOptions: {type: 'cover', percentage: 90, property: 'translate'},
     parallaxKey: "aW5pdGNvZmZlZS5jb21fV00yY0dGeVlXeHNZWGc9NTU2",
     autoScrolling: true,
     scrollOverflow: true,
@@ -31,10 +31,12 @@ $(document).ready(function() {
     navigation: true,
     navigationTooltips:[' ',' ',' '],
     slidesNavigation: true,
+    scrollBar: true,
+
 
 
     afterRender: function() {
-      document.getElementById("slide1-1").style.animation="zoomout 21s infinite,top_container-animation 7s";
+      document.getElementById("slide1-1").style.animation="top_container-animation 7s";
 
       //on page load, start the slideshow
         // var i=2;
@@ -46,9 +48,9 @@ $(document).ready(function() {
         // $.fn.fullpage.silentMoveTo(1,i);
         // i++;
         // $('.fp-slidesContainer').css("transition","all 2s!important");
-        document.getElementById("slide1-1").style.animation="zoomout 27s infinite";
-        document.getElementById("slide1-2").style.animation="zoomout 27s infinite";
-        document.getElementById("slide1-3").style.animation="zoomout 27s infinite";
+        document.getElementById("slide1-1").style.animation="";
+        document.getElementById("slide1-2").style.animation="";
+        document.getElementById("slide1-3").style.animation="";
         // if (i == 3){
         //   i=1;
         // };
@@ -76,9 +78,9 @@ $(document).ready(function() {
           // $('.fp-slidesContainer').css("transition","all 2s!important");
 
           // $.fn.fullpage.moveSlideRight();
-          document.getElementById("slide1-1").style.animation="zoomout 27s infinite";
-          document.getElementById("slide1-2").style.animation="zoomout 27s infinite";
-          document.getElementById("slide1-3").style.animation="zoomout 27s infinite";
+          document.getElementById("slide1-1").style.animation="";
+          document.getElementById("slide1-2").style.animation="";
+          document.getElementById("slide1-3").style.animation="";
         }, 9000);
 
       };

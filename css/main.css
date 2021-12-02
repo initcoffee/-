@@ -37,7 +37,7 @@ h5 {
 
 .slogan {
   top: 75%;
-  font-size: calc(2rem + .1vw);
+  font-size: calc(1rem + .1vw);
 }
 
 /* cookies */
@@ -54,7 +54,7 @@ h5 {
 
 .announcement-bar__link {
   color: black;
-  font-size: calc(1.2rem + .05vw);
+  font-size: calc(0.7rem + .3vw);
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h5 {
 
 @media (max-width:1499px){
   .fp-bottom{
-    left: 46vw!important;
+    left: 39vw!important;
   }
 }
 
@@ -512,11 +512,11 @@ h5 {
 
 .brand-description h3 {
   padding-bottom: 3rem;
-  font-size: calc(2rem + 2.5vw);
+  font-size: calc(1rem + 2.5vw);
 }
 
 .brand-description h5 {
-  font-size: calc(1.8rem + 0.3vw);
+  font-size: calc(0.8rem + 0.3vw);
   padding-left: 1.5rem;
 }
 
