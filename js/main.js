@@ -9,7 +9,13 @@ function cancel() {
   document.getElementById("shopify-section-announcement-bar").style.display = "none";
 };
 
-
+function cancelOverlay() {
+  $.fn.fullpage.setAllowScrolling(true);
+  document.getElementById("overlay").style.animation = "overlay-animation 1s";
+  setTimeout(function() {
+    document.getElementById("overlay").style.display = "none";
+  }, 1000);
+}
 
 
 $(document).ready(function() {
@@ -23,24 +29,31 @@ $(document).ready(function() {
     licenseKey: "A5C73EA9-E877473E-86CBE264-B639EBF0",
     anchors: ['firstPage', 'secondPage', 'thirdPage'],
     parallax: true,
-    parallaxOptions: {type: 'cover', percentage: 80, property: 'translate'},
+    parallaxOptions: {
+      type: 'cover',
+      percentage: 80,
+      property: 'translate'
+    },
     parallaxKey: "aW5pdGNvZmZlZS5jb21fV00yY0dGeVlXeHNZWGc9NTU2",
     autoScrolling: true,
     scrollOverflow: true,
     loopHorizontal: true,
     navigation: true,
-    navigationTooltips:[' ',' ',' '],
+    navigationTooltips: [' ', ' ', ' '],
     slidesNavigation: true,
     controlArrows: true,
 
-
-
-
     afterRender: function() {
-      document.getElementById("slide1-1").style.animation="top_container-animation 7s";
+      $.fn.fullpage.setAllowScrolling(false);
+      setTimeout(function() {
+        document.getElementById("overlay").style.animation = "top_container-animation 2s";
+        document.getElementById("overlay").style.display = "flex";
+      }, 3000);
+
+
 
       //on page load, start the slideshow
-        // var i=2;
+      // var i=2;
       slideTimeout = setInterval(function() {
         // $.fn.fullpage.moveSlideRight();
         // console.log(i);
@@ -49,9 +62,9 @@ $(document).ready(function() {
         // $.fn.fullpage.silentMoveTo(1,i);
         // i++;
         // $('.fp-slidesContainer').css("transition","all 2s!important");
-        document.getElementById("slide1-1").style.animation="";
-        document.getElementById("slide1-2").style.animation="";
-        document.getElementById("slide1-3").style.animation="";
+        document.getElementById("slide1-1").style.animation = "";
+        document.getElementById("slide1-2").style.animation = "";
+        document.getElementById("slide1-3").style.animation = "";
         // if (i == 3){
         //   i=1;
         // };
@@ -66,7 +79,7 @@ $(document).ready(function() {
         clearInterval(slideTimeout);
         $("body").css("background-color", "black");
       };
-      if(origin.index == '1' & direction == 'up'){
+      if (origin.index == '1' & direction == 'up') {
         $("body").css("background-color", "white");
 
         slideTimeout = setInterval(function() {
@@ -79,9 +92,9 @@ $(document).ready(function() {
           // $('.fp-slidesContainer').css("transition","all 2s!important");
 
           // $.fn.fullpage.moveSlideRight();
-          document.getElementById("slide1-1").style.animation="";
-          document.getElementById("slide1-2").style.animation="";
-          document.getElementById("slide1-3").style.animation="";
+          document.getElementById("slide1-1").style.animation = "";
+          document.getElementById("slide1-2").style.animation = "";
+          document.getElementById("slide1-3").style.animation = "";
         }, 9000);
 
       };
