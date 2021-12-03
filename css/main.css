@@ -86,14 +86,15 @@ h5 {
   background: #f3f3f3;
   width: 100vw;
   position: absolute;
-  opacity: 80%;
-  animation: top_container-animation 7s;
+
+  top:0;
 }
 
 .announcement-bar__link {
   color: black;
   font-size: calc(0.7rem + .3vw);
   text-decoration: none;
+
 }
 
 .announcement-bar__message {

@@ -5,16 +5,15 @@ function gotoMain() {
   fullpage_api.moveTo(2);
 };
 
-function cancel() {
-  document.getElementById("shopify-section-announcement-bar").style.display = "none";
-};
 
 function cancelOverlay() {
   $.fn.fullpage.setAllowScrolling(true);
-  document.getElementById("overlay").style.animation = "overlay-animation 1s";
+  document.getElementById("overlay").style.animation = "overlay-animation 0.5s";
+  document.getElementById("shopify-section-announcement-bar").style.animation = "overlay-animation 0.5s";
   setTimeout(function() {
     document.getElementById("overlay").style.display = "none";
-  }, 1000);
+    document.getElementById("shopify-section-announcement-bar").style.display = "none";
+  }, 500);
 }
 
 
@@ -46,9 +45,11 @@ $(document).ready(function() {
     afterRender: function() {
       $.fn.fullpage.setAllowScrolling(false);
       setTimeout(function() {
-        document.getElementById("overlay").style.animation = "top_container-animation 2s";
+        document.getElementById("overlay").style.animation = "top_container-animation 1s";
         document.getElementById("overlay").style.display = "flex";
-      }, 3000);
+        document.getElementById("shopify-section-announcement-bar").style.animation = "top_container-animation 1s";
+
+      }, 3500);
 
 
 
