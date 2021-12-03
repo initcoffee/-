@@ -26,7 +26,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     //options here
     licenseKey: "A5C73EA9-E877473E-86CBE264-B639EBF0",
-    anchors: ['firstPage', 'secondPage', 'thirdPage'],
+
     parallax: true,
     parallaxOptions: {
       type: 'cover',
