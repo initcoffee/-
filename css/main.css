@@ -120,13 +120,13 @@ h5 {
   bottom: 20%;
 }
 
-#cancel-button-2 {
+/* #cancel-button-2 {
   border-color: transparent;
   position: relative;
   left: 97%;
   top: 9%;
   background: white;
-}
+} */
 
 .slide {
   animation: top_container-animation 7s;
