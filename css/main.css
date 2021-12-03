@@ -570,14 +570,23 @@ h5 {
 #brand-description-2{
     background-color: #F3D5C0;
 } */
-.brand-description h3 {
-  padding-bottom: 3rem;
-  font-size: calc(1rem + 2.5vw);
+
+#description-text-line1{
+
 }
 
-.brand-description h5 {
+
+
+.description-text {
+  padding-bottom: 3rem;
+  font-size: calc(1rem + 2.5vw);
+  color: cornsilk;
+}
+
+.description-text2 {
   font-size: calc(0.8rem + 0.3vw);
   padding-left: 1.5rem;
+  color: cornsilk;
 }
 
 .brand-description-bg {
@@ -617,6 +626,7 @@ h5 {
   height: 3.5rem;
   position: absolute;
   height: calc(1.5rem + 7vw);
+  top:90%;
 }
 
 #brand-description-img-1:hover, #brand-description-img-2:hover {
