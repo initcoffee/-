@@ -156,13 +156,13 @@ h5 {
 .fp-controlArrow.fp-next {
   right: 50px;
   border-width: calc(10px + 1vw);
-  top: 50vh;
+  top: 53vh;
 }
 
 .fp-controlArrow.fp-prev {
   left: 50px;
   border-width: calc(10px + 1vw) calc(10px + 1vw) calc(10px + 1vw);
-  top: 50vh;
+  top: 53vh;
 }
 
 /* SLOGAN and LOGO ANIMATION */
