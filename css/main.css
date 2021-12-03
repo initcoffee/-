@@ -42,6 +42,13 @@ h5 {
 }
 
 
+
+.overlay-content{
+  width: 80vw;
+  height: 38vh;
+}
+
+
 #overlay-img{
   width: 80vw;
   height: 38vh;
@@ -111,6 +118,14 @@ h5 {
   position: absolute;
   left: 90%;
   bottom: 20%;
+}
+
+#cancel-button-2 {
+  border-color: transparent;
+  position: relative;
+  left: 97%;
+  top: 9%;
+  background: white;
 }
 
 .slide {
