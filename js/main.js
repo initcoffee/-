@@ -21,6 +21,8 @@ $(document).ready(function() {
   // Set body bg to black after 5 secs delay
   // setTimeout(() => $("body").css("background-color", "black"), 7000) // in milli seconds
 
+  document.getElementById("shopify-section-announcement-bar").style.opacity = "0";
+
 
 
   $('#fullpage').fullpage({
@@ -43,11 +45,14 @@ $(document).ready(function() {
     controlArrows: true,
 
     afterRender: function() {
-      $.fn.fullpage.setAllowScrolling(false);
+      // $.fn.fullpage.setAllowScrolling(false);
       setTimeout(function() {
-        document.getElementById("overlay").style.animation = "top_container-animation 1s";
-        document.getElementById("overlay").style.display = "flex";
+        // document.getElementById("overlay").style.animation = "top_container-animation 1s";
+        // document.getElementById("overlay").style.display = "flex";
+        document.getElementById("overlay").style.display = "none";
         document.getElementById("shopify-section-announcement-bar").style.animation = "top_container-animation 1s";
+        document.getElementById("shopify-section-announcement-bar").style.opacity = "1";
+
 
       }, 3500);
 
@@ -197,7 +202,7 @@ $(document).ready(function() {
 
         return;
       }
-      // 
+      //
       // branddescription.classList.remove('branddescription-transition-1');
       // branddescription2.classList.remove('branddescription-transition-2');
       // branddescription3.classList.remove('branddescription-transition-3');
