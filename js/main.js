@@ -5,14 +5,19 @@ function gotoMain() {
   fullpage_api.moveTo(2);
 };
 
-
-function cancelOverlay() {
-  $.fn.fullpage.setAllowScrolling(true);
-  document.getElementById("overlay").style.animation = "overlay-animation 0.5s";
+function cancelCookieOverlay() {
   document.getElementById("shopify-section-announcement-bar").style.animation = "overlay-animation 0.5s";
   setTimeout(function() {
-    document.getElementById("overlay").style.display = "none";
     document.getElementById("shopify-section-announcement-bar").style.display = "none";
+  }, 500);
+}
+
+
+function cancelBannerOverlay() {
+  $.fn.fullpage.setAllowScrolling(true);
+  document.getElementById("overlay").style.animation = "overlay-animation 0.5s";
+  setTimeout(function() {
+    document.getElementById("overlay").style.display = "none";
   }, 500);
 }
 
