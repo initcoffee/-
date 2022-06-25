@@ -13,13 +13,13 @@ function cancelCookieOverlay() {
 }
 
 
-function cancelBannerOverlay() {
-  $.fn.fullpage.setAllowScrolling(true);
-  document.getElementById("overlay").style.animation = "overlay-animation 0.5s";
-  setTimeout(function() {
-    document.getElementById("overlay").style.display = "none";
-  }, 500);
-}
+// function cancelBannerOverlay() {
+//   $.fn.fullpage.setAllowScrolling(true);
+//   document.getElementById("overlay").style.animation = "overlay-animation 0.5s";
+//   setTimeout(function() {
+//     document.getElementById("overlay").style.display = "none";
+//   }, 500);
+// }
 
 
 $(document).ready(function() {
@@ -50,11 +50,11 @@ $(document).ready(function() {
     controlArrows: true,
 
     afterRender: function() {
-      $.fn.fullpage.setAllowScrolling(false);
+      $.fn.fullpage.setAllowScrolling(true);
       setTimeout(function() {
-        document.getElementById("overlay").style.animation = "top_container-animation 1s";
-        document.getElementById("overlay").style.display = "flex";
-        // document.getElementById("overlay").style.display = "none";
+        // document.getElementById("overlay").style.animation = "top_container-animation 1s";
+        // document.getElementById("overlay").style.display = "flex";
+        document.getElementById("overlay").style.display = "none";
         document.getElementById("shopify-section-announcement-bar").style.animation = "top_container-animation 1s";
         document.getElementById("shopify-section-announcement-bar").style.opacity = "1";
 
